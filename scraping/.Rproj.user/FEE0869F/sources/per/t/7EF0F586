@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573421003570.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4112087581",
+    "id" : "7EF0F586",
+    "lastKnownWriteTime" : 1573421937,
+    "last_content_update" : 1573421937472,
+    "path" : "~/Desktop/AwayGoalRule/scraping/scrapGames.R",
+    "project_path" : "scrapGames.R",
+    "properties" : {
+        "cursorPosition" : "127,0",
+        "scrollLine" : "108"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

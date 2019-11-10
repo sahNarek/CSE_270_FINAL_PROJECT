@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573422037425.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "528E27C1",
+    "lastKnownWriteTime" : 1573422030,
+    "last_content_update" : 1573422037425,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "C794E070",
+        "caption" : "ucl_po_1994_2019_scrapped",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=ucl_po_1994_2019_scrapped&cache_key=C794E070",
+        "displayedObservations" : "516",
+        "environment" : "",
+        "object" : "ucl_po_1994_2019_scrapped",
+        "preview" : "0",
+        "totalObservations" : "516",
+        "variables" : "8"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

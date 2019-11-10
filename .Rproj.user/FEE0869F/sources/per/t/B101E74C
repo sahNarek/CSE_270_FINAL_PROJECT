@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573421141010.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "808457819",
+    "id" : "B101E74C",
+    "lastKnownWriteTime" : 1573422030,
+    "last_content_update" : 1573422030875,
+    "path" : "~/Desktop/AwayGoalRule/cleanData.R",
+    "project_path" : "cleanData.R",
+    "properties" : {
+        "cursorPosition" : "1,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
