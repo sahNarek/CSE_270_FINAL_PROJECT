@@ -9,11 +9,11 @@
     "id" : "7EF0F586",
     "lastKnownWriteTime" : 1573421937,
     "last_content_update" : 1573421937472,
-    "path" : "~/Desktop/AwayGoalRule/scraping/scrapGames.R",
+    "path" : "~/Desktop/ET_Analysis/scraping/scrapGames.R",
     "project_path" : "scrapGames.R",
     "properties" : {
         "cursorPosition" : "127,0",
-        "scrollLine" : "108"
+        "scrollLine" : "0"
     },
     "relative_order" : 1,
     "source_on_save" : false,
