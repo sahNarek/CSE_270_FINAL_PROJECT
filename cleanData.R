@@ -1,4 +1,4 @@
-packages_list <- c("ggplot2", "dplyr", "stringr", "remotes")
+packages_list <- c("ggplot2", "dplyr", "stringr")
 
 install_or_call <- function(list = packages_list){
   installed <- installed.packages()[,"Package"]
@@ -10,15 +10,10 @@ install_or_call <- function(list = packages_list){
   }
 }
 install_or_call()
-load("data/ucl_po_1994_2019.rda")
-
-ucl_1994_2019 <- ucl_po_1994_2019_scrapped
+load("data/ucl_po_1994_2018.rda")
 
 
-et_games <- ucl_1994_2019 %>%
-  filter(str_detect(RESULT, pattern = "[a-zA-Z]"))
-
-get_first_games <- function(data = et_games, source = ucl_1994_2019){
+get_first_games <- function(data = et_games, source = ucl_po_94_18){
   result <- c()
   for(game in 1:nrow(data)){
     et_game <- data[game,]
@@ -29,12 +24,6 @@ get_first_games <- function(data = et_games, source = ucl_1994_2019){
   }
   return(as.data.frame(result))
 }
-
-first_rounds <- get_first_games()
-et_games <- rbind(et_games, first_rounds)
-
-games <- ucl_1994_2019 %>%
-  anti_join(et_games)
 
 get_score <- function(string){
   return(str_extract_all(string, pattern = "[0-9, :]"))
@@ -104,24 +93,10 @@ get_penalties_score <- function(text){
   return(a)
 }
 
-
-games <- games %>%
-  rowwise() %>%
-  mutate(FTHG = get_scores_for_halfs(RESULT)$FTHG, 
-         FTAG = get_scores_for_halfs(RESULT)$FTAG,
-         HTHG = get_scores_for_halfs(RESULT)$HTHG, 
-         HTAG = get_scores_for_halfs(RESULT)$HTAG,
-         ETHG = get_scores_for_halfs(RESULT)$ETHG,
-         ETAG = get_scores_for_halfs(RESULT)$ETAG,
-         PTHG = get_scores_for_halfs(RESULT)$PTHG,
-         PTAG = get_scores_for_halfs(RESULT)$PTAG) %>%
-  select(COMP, SEASON, ROUND, LEG, DATE, HOMETEAM, AWAYTEAM, 
-         FTHG, FTAG, HTHG, HTAG, ETHG, ETAG, PTHG, PTAG)
-
-
 get_away_goal_games <- function(data = games) {
   result <- c()
-  for(i in seq(from = 1, to = nrow(data), by = 2)){
+  rows <- seq(from = 1, to = nrow(data), by = 2)
+  for(i in rows){
     f_leg <- data[i,]
     s_leg <- data[i+1,]
     if(f_leg$FTHG + s_leg$FTAG == f_leg$FTAG + s_leg$FTHG){
@@ -130,7 +105,6 @@ get_away_goal_games <- function(data = games) {
   }
   return(result)
 }
-
 
 get_correct_goals <- function(score) {
   numbers <- str_remove_all(score, pattern = "[a-z]")
@@ -147,23 +121,94 @@ get_correct_goals <- function(score) {
   else{
     result <- get_scores_for_halfs(scores)
   }
-  
   return(result)
 }
 
-data <- et_games %>%
-  rowwise() %>%
-  mutate(FTHG = get_correct_goals(RESULT)$FTHG, 
-         FTAG = get_correct_goals(RESULT)$FTAG,
-         HTHG = get_correct_goals(RESULT)$HTHG, 
-         HTAG = get_correct_goals(RESULT)$HTAG,
-         ETHG = get_correct_goals(RESULT)$ETHG,
-         ETAG = get_correct_goals(RESULT)$ETAG,
-         PTHG = get_correct_goals(RESULT)$PTHG,
-         PTAG = get_correct_goals(RESULT)$PTAG) %>%
-  select(COMP, SEASON, ROUND, LEG, DATE, HOMETEAM, AWAYTEAM, 
-         FTHG, FTAG, HTHG, HTAG, ETHG, ETAG, PTHG, PTAG)
+get_right_date <- function(leg, date){
+  leg_string <- paste(leg,": ",sep = "")
+  date_nl <- sub(x = date, pattern = leg_string, replacement = "", fixed = T )
+  
+  real_date <- str_split(date_nl , pattern = " ")[[1]][1]
+  return(as.Date(real_date, format = "%d/%m/%Y"))
+}
 
-away_et <- rbind(data, aways)
+clean_scores <- function(data){
+  return(data %>%
+    rowwise() %>%
+    mutate(FTHG = get_correct_goals(RESULT)$FTHG, 
+           FTAG = get_correct_goals(RESULT)$FTAG,
+           HTHG = get_correct_goals(RESULT)$HTHG, 
+           HTAG = get_correct_goals(RESULT)$HTAG,
+           ETHG = get_correct_goals(RESULT)$ETHG,
+           ETAG = get_correct_goals(RESULT)$ETAG,
+           PTHG = get_correct_goals(RESULT)$PTHG,
+           PTAG = get_correct_goals(RESULT)$PTAG) %>%
+    select(COMP, SEASON, ROUND, LEG, DATE, HOMETEAM, AWAYTEAM, 
+           FTHG, FTAG, HTHG, HTAG, ETHG, ETAG, PTHG, PTAG))
+}
 
-save(away_et, file = "ucl_1994_2019_eta.rda")
+get_no_et_games <- function(data = et_games){
+  first_rounds <- get_first_games(data = et_games)
+  et_games_1 <- rbind(data, first_rounds) 
+  games <- ucl_po_94_18 %>%
+    anti_join(et_games_1)
+  games <- clean_scores(games)
+  
+  games <- games %>%
+    mutate(DATE = get_right_date(LEG, DATE))
+  games$LEG <- factor(games$LEG, levels = unique(games$LEG), labels = c("1", "2", "F"))
+  
+  final_games <- games %>%
+    filter(LEG == "F")
+  games <- games %>%
+    anti_join(final_games)
+  return(games)
+}
+
+get_et_games <- function(data = ucl_po_94_18) {
+  et_games <- data %>%
+    filter(str_detect(RESULT, pattern = "[a-zA-Z]"))
+  
+  et_games <- et_games %>%
+    filter(!(SEASON == "2004-2005" & AWAYTEAM == "AC Milan" 
+             & HOMETEAM == "Inter" & ROUND == "viertelfinale"))
+  et_games <- clean_scores(et_games)
+  et_games$LEG <- factor(et_games$LEG, levels = unique(et_games$LEG), labels = c("2", "F"))
+  return(et_games)
+}
+
+get_et_def <- function(data = ucl_po_94_18){
+  et_games <- data %>%
+    filter(str_detect(RESULT, pattern = "[a-zA-Z]"))
+  
+  et_games <- et_games %>%
+    filter(!(SEASON == "2004-2005" & AWAYTEAM == "AC Milan" 
+             & HOMETEAM == "Inter" & ROUND == "viertelfinale"))
+  return(et_games)
+}
+
+
+et_games <- get_et_games(data = ucl_po_94_18)
+et_fr <- get_first_games(data = et_games, source = ucl_po_94_18)
+et_fr <- clean_scores(et_fr)
+
+et_def <- get_et_def()
+games <- get_no_et_games(data = et_def)
+
+aways <- get_away_goal_games(data = games)
+
+str(aways)
+
+
+et_aw_games <- rbind(et_games, et_fr)
+
+
+f_leg <- aways %>%
+  filter(LEG == "1")
+
+s_leg <- aways %>%
+  filter(LEG == "2")
+
+identical(f_leg$HOMETEAM, s_leg$AWAYTEAM)
+
+save(away_et, file = "data/et_games_94_18.rda")

@@ -4,6 +4,8 @@ library(dplyr)
 library(magrittr)
 library(stringr)
 
+ucl_games <- "https://www.worldfootball.net/schedule/champions-league-"
+
 game_dates <- function(df_clean){
   dates <- c()
   for(index in 1:nrow(df_clean)){
@@ -43,10 +45,6 @@ get_seasons <- function(start, end){
   }
   return(seasons)
 }
-ucl_games <- "https://www.worldfootball.net/schedule/champions-league-"
-seasons1 <- get_seasons(2007, 2018)
-seasons2 <- get_seasons(1994, 2006)
-
 rounds <- list(R16 = "achtelfinale",
                R8 = "viertelfinale",
                R4 = "halbfinale",
@@ -60,6 +58,7 @@ get_df <- function(url){
   return(as.data.frame(table))
 }
 
+
 clear_one_game <- function(data, season, round, comp, leg) {
   result <- data.frame(COMP = comp, SEASON = season, ROUND = round, LEG = leg,
                        HOMETEAM = data$X3, AWAYTEAM = data$X5, RESULT = data$X6,
@@ -72,6 +71,11 @@ get_ucl_data <- function(seasons, round, game_url = ucl_games, comp) {
   result <- c()
   for(season in seasons){
     ucl_data <- paste(game_url, season, "-", round, sep = "")
+    if(season == "2008-2009" && round != "achtelfinale"){
+      ucl_data <- paste(ucl_data, "2", sep = "_")
+      print("the url")
+      print(ucl_data)
+    }
     round_data <- get_df(ucl_data)
     if(round == "finale" | round == "endspiel"){
       data_cleaned <- clear_one_game(data = round_data, season = season,
@@ -86,42 +90,41 @@ get_ucl_data <- function(seasons, round, game_url = ucl_games, comp) {
   return(result)
 }
 
-final_url <- "https://www.worldfootball.net/schedule/champions-league-2008-2009-finale_2/"
 
-data_16 <- get_ucl_data(seasons = seasons1, round = rounds$R16, comp = "UCL")
-data_8 <- get_ucl_data(seasons = seasons1, round = rounds$R8, comp = "UCL")
-data_4 <- get_ucl_data(seasons = seasons1, round = rounds$R4, comp = "UCL")
-data_2 <- get_ucl_data(seasons = seasons1, round = rounds$RF, comp = "UCL")
 
-#The structure of the url for 2008-2009 final game was a little different
-#to keep the harmony let's handle this case seperately
-
-add_missing_final <- function(data, final_url){
-  data <- data %>%
-    filter(!(HOMETEAM == ""), !(AWAYTEAM == ""), 
-           !(HOMETEAM == "-"), !(AWAYTEAM == "-"))
-  final_2008_2009 <- get_df(final_url)
-  final_2008_2009 <- clear_one_game(data = final_2008_2009, season = "2008-2009", round = "finale",
-                                    comp = "UCL", leg = "FINAL")
-  data <- rbind(data, final_2008_2009) 
-  data <- data[c(1,12,3:11),]
-  rownames(data) <- 1:nrow(data)
-  return(data)
+get_all_games <- function(){
+  seas_07_18 <- get_seasons(2007, 2018)
+  seas_94_02 <- get_seasons(1994, 2002)
+  seas_02_06 <- get_seasons(2003, 2006)
+  
+  data_16 <- get_ucl_data(seasons = seas_07_18, round = rounds$R16, comp = "UCL")
+  data_8 <- get_ucl_data(seasons = seas_07_18, round = rounds$R8, comp = "UCL")
+  data_4 <- get_ucl_data(seasons = seas_07_18, round = rounds$R4, comp = "UCL")
+  data_2 <- get_ucl_data(seasons = seas_07_18, round = rounds$RF, comp = "UCL")
+  
+  ucl_07_18 <- rbind(data_16 ,data_8 ,data_4, data_2)
+  
+  data_16_2 <- get_ucl_data(seasons = seas_02_06, round = rounds$R16, comp = "UCL")
+  data_8_2 <- get_ucl_data(seasons = seas_02_06, round = rounds$R8, comp = "UCL")
+  data_4_2 <- get_ucl_data(seasons = seas_02_06, round = rounds$R4, comp = "UCL")
+  data_16_2 <- get_ucl_data(seasons = seas_02_06, round = rounds$RF1, comp = "UCL")
+  
+  ucl_02_06 <- rbind(data_16_2, data_8_2, data_4_2, data_2_2)
+  
+  data_8_3 <- get_ucl_data(seasons = seas_94_02, round = rounds$R8, comp = "UCL")
+  data_4_3 <- get_ucl_data(seasons = seas_94_02, round = rounds$R4, comp = "UCL")
+  data_2_3 <- get_ucl_data(seasons = seas_94_02, round = rounds$RF1, comp = "UCL")
+  
+  ucl_94_02 <- rbind(data_8_3, data_4_3, data_2_3)
+  
+  ucl_94_18 <- rbind(ucl_94_02, ucl_02_06, ucl_07_18)
+  
+  return(ucl_94_18)
 }
 
-data_2 <- add_missing_final(data = data_2, final_url = final_url)
-ucl_po_2008_2019_scrapped <- rbind(data_16, data_8, data_4, data_2)
 
+ucl_po_94_18 <- get_all_games()
 
-data_8_2 <- get_ucl_data(seasons = seasons2, round = rounds$R8, comp = "UCL")
-data_4_2 <- get_ucl_data(seasons = seasons2, round = rounds$R4, comp = "UCL")
-data_2_2 <- get_ucl_data(seasons = seasons2, round = rounds$RF1, comp = "UCL")
-
-ucl_po_1994_2007_scrapped <- rbind(data_8_2, data_4_2, data_2_2)
-
-ucl_po_1994_2019_scrapped <- rbind(ucl_po_2008_2019_scrapped, 
-                                   ucl_po_1994_2007_scrapped)
-
-save(ucl_po_1994_2019_scrapped, file = "ucl_po_1994_2019.rda")
-saveRDS(ucl_po_1994_2019_scrapped, file = "ucl_po_1994_2019.rds")
-write.csv(ucl_po_1994_2019_scrapped, file = "ucl_po_1994_2019.csv")
+save(ucl_po_94_18, file = "ucl_po_1994_2018.rda")
+saveRDS(ucl_po_94_18, file = "ucl_po_1994_2018.rds")
+write.csv(ucl_po_94_18, file = "ucl_po_1994_2018.csv")
