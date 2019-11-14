@@ -4,16 +4,16 @@
     "created" : 1573421003570.000,
     "dirty" : false,
     "encoding" : "UTF-8",
-    "folds" : "",
-    "hash" : "2516977441",
+    "folds" : "8|33|24|0|\n26|51|37|0|\n39|36|46|0|\n",
+    "hash" : "3144606417",
     "id" : "7EF0F586",
-    "lastKnownWriteTime" : 1573634240,
-    "last_content_update" : 1573634240808,
+    "lastKnownWriteTime" : 1573748279,
+    "last_content_update" : 1573748279262,
     "path" : "~/Desktop/ET_Analysis/scraping/scrapGames.R",
     "project_path" : "scrapGames.R",
     "properties" : {
-        "cursorPosition" : "124,0",
-        "scrollLine" : "115"
+        "cursorPosition" : "140,0",
+        "scrollLine" : "121"
     },
     "relative_order" : 1,
     "source_on_save" : false,

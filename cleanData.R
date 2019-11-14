@@ -173,7 +173,6 @@ get_et_games <- function(data = ucl_po_94_18) {
     filter(!(SEASON == "2004-2005" & AWAYTEAM == "AC Milan" 
              & HOMETEAM == "Inter" & ROUND == "viertelfinale"))
   et_games <- clean_scores(et_games)
-  et_games$LEG <- factor(et_games$LEG, levels = unique(et_games$LEG), labels = c("2", "F"))
   return(et_games)
 }
 
@@ -187,28 +186,73 @@ get_et_def <- function(data = ucl_po_94_18){
   return(et_games)
 }
 
+combine_legs <- function(f_leg, s_leg, st_id, type){
+  result <- c()
+  for(i in 1:nrow(f_leg)){
+    f_game <- f_leg[i,]
+    s_game <- s_leg[i,]
+    
+    f_game$LEG_ID <- st_id
+    s_game$LEG_ID <- st_id
+    
+    f_game$TYPE <- type
+    s_game$TYPE <- type
+    
+    result <- rbind(result, f_game, s_game)
+    st_id <- st_id + 1
+  }
+  return(result)
+}
+
+finals_leg_ids <- function(final_games, st_id){
+  result <- c()
+  for(i in 1:nrow(final_games)){
+    game <- final_games[i,]
+    game$LEG_ID <- st_id
+    game$TYPE <- "F"
+    result <- rbind(result, game)
+  }
+  return(result)
+}
 
 et_games <- get_et_games(data = ucl_po_94_18)
 et_fr <- get_first_games(data = et_games, source = ucl_po_94_18)
 et_fr <- clean_scores(et_fr)
+et_fr <- et_fr %>%
+  mutate(DATE = get_right_date(LEG, DATE))
+et_fr$LEG <- factor(et_fr$LEG, levels = unique(et_fr$LEG), labels = c("1"))
 
 et_def <- get_et_def()
 games <- get_no_et_games(data = et_def)
 
 aways <- get_away_goal_games(data = games)
 
-str(aways)
+et_games <- et_games %>%
+  mutate(DATE = get_right_date(LEG, DATE))
+et_games$LEG <- factor(et_games$LEG, levels = unique(et_games$LEG), labels = c("2", "F"))
 
+et_no_finals <- et_games %>%
+  filter(LEG != "F")
 
-et_aw_games <- rbind(et_games, et_fr)
-
+et_finals <- et_games %>%
+  filter(LEG == "F" )
 
 f_leg <- aways %>%
   filter(LEG == "1")
 
 s_leg <- aways %>%
   filter(LEG == "2")
+#agr = away goal rule
+et_legs <- combine_legs(f_leg = et_fr, s_leg = et_no_finals,1 , type = "ET")
+last_id <- tail(et_legs, 1)$LEG_ID + 1
+agr_legs <- combine_legs(f_leg = f_leg, s_leg = s_leg, st_id = last_id, type = "AGR")
+last_id_1 <- tail(agr_legs, 1)$LEG_ID + 1
+final_legs <- finals_leg_ids(final_games = et_finals, st_id = last_id_1)
 
-identical(f_leg$HOMETEAM, s_leg$AWAYTEAM)
+et_agr <- rbind(et_legs, agr_legs, final_legs)
+et_agr$TYPE <- factor(et_agr$TYPE, levels = unique(et_agr$TYPE), labels = c("ET","AGR","F"))
 
-save(away_et, file = "data/et_games_94_18.rda")
+str(et_agr)
+
+save(et_agr, file = "data/et_agr_94_18.rda")
+write.csv(et_agr, file = "data/et_agr_94_18.csv")

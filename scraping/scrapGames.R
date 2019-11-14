@@ -122,9 +122,19 @@ get_all_games <- function(){
   return(ucl_94_18)
 }
 
+rounds <- list(R16 = "achtelfinale",
+               R8 = "viertelfinale",
+               R4 = "halbfinale",
+               RF = "finale",
+               RF1 = "endspiel")
 
 ucl_po_94_18 <- get_all_games()
+as.factor(ucl_po_94_18$ROUND)
+
+ucl_po_94_18$ROUND <- factor(ucl_po_94_18$ROUND, levels = unique(ucl_po_94_18$ROUND), 
+                             labels = c("R8", "R4", "RF", "R16", "RF"))
+
+
 
 save(ucl_po_94_18, file = "ucl_po_1994_2018.rda")
-saveRDS(ucl_po_94_18, file = "ucl_po_1994_2018.rds")
 write.csv(ucl_po_94_18, file = "ucl_po_1994_2018.csv")
