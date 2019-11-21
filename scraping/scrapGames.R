@@ -1,8 +1,14 @@
-library(rvest)
-library(curl)
-library(dplyr)
-library(magrittr)
-library(stringr)
+packages_list <- c("rvest","curl","dplyr","magrittr","stringr")
+install_or_call <- function(list = packages_list){
+  installed <- installed.packages()[,"Package"]
+  for( package in packages_list ){
+    if(!(package %in% installed)){
+      install.packages(package)
+    }
+    do.call(library, list(package))
+  }
+}
+install_or_call()
 
 ucl_games <- "https://www.worldfootball.net/schedule/champions-league-"
 
@@ -45,6 +51,7 @@ get_seasons <- function(start, end){
   }
   return(seasons)
 }
+
 rounds <- list(R16 = "achtelfinale",
                R8 = "viertelfinale",
                R4 = "halbfinale",

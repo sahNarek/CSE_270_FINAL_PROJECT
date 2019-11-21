@@ -4,16 +4,16 @@
     "created" : 1573421003570.000,
     "dirty" : false,
     "encoding" : "UTF-8",
-    "folds" : "8|33|24|0|\n26|51|37|0|\n39|36|46|0|\n",
-    "hash" : "3144606417",
+    "folds" : "",
+    "hash" : "192892088",
     "id" : "7EF0F586",
-    "lastKnownWriteTime" : 1573748279,
-    "last_content_update" : 1573748279262,
-    "path" : "~/Desktop/ET_Analysis/scraping/scrapGames.R",
+    "lastKnownWriteTime" : 1574269279,
+    "last_content_update" : 1574269281946,
+    "path" : "~/workspace/SportsAnalytics/ET_Analysis/scraping/scrapGames.R",
     "project_path" : "scrapGames.R",
     "properties" : {
-        "cursorPosition" : "140,0",
-        "scrollLine" : "121"
+        "cursorPosition" : "140,13",
+        "scrollLine" : "0"
     },
     "relative_order" : 1,
     "source_on_save" : false,

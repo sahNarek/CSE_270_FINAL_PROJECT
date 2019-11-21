@@ -1,5 +1,4 @@
-packages_list <- c("ggplot2", "dplyr", "stringr")
-
+packages_list <- c("ggplot2", "dplyr", "stringr","hablar")
 install_or_call <- function(list = packages_list){
   installed <- installed.packages()[,"Package"]
   for( package in packages_list ){
@@ -192,8 +191,10 @@ combine_legs <- function(f_leg, s_leg, st_id, type){
     f_game <- f_leg[i,]
     s_game <- s_leg[i,]
     
-    f_game$LEG_ID <- st_id
-    s_game$LEG_ID <- st_id
+    leg_id <- paste(type, st_id, sep = "")
+    
+    f_game$LEG_ID <- leg_id
+    s_game$LEG_ID <- leg_id
     
     f_game$TYPE <- type
     s_game$TYPE <- type
@@ -204,13 +205,15 @@ combine_legs <- function(f_leg, s_leg, st_id, type){
   return(result)
 }
 
-finals_leg_ids <- function(final_games, st_id){
+finals_leg_ids <- function(final_games, st_id, type = "F"){
   result <- c()
   for(i in 1:nrow(final_games)){
     game <- final_games[i,]
-    game$LEG_ID <- st_id
-    game$TYPE <- "F"
+    leg_id <- paste(type,st_id, sep = "")
+    game$LEG_ID <- leg_id
+    game$TYPE <- type
     result <- rbind(result, game)
+    st_id <- st_id + 1
   }
   return(result)
 }
@@ -242,17 +245,30 @@ f_leg <- aways %>%
 
 s_leg <- aways %>%
   filter(LEG == "2")
+
+et_finals <- et_finals %>%
+  distinct(SEASON, ROUND, HOMETEAM, AWAYTEAM, DATE, .keep_all = T)
+
+
 #agr = away goal rule
 et_legs <- combine_legs(f_leg = et_fr, s_leg = et_no_finals,1 , type = "ET")
-last_id <- tail(et_legs, 1)$LEG_ID + 1
-agr_legs <- combine_legs(f_leg = f_leg, s_leg = s_leg, st_id = last_id, type = "AGR")
-last_id_1 <- tail(agr_legs, 1)$LEG_ID + 1
-final_legs <- finals_leg_ids(final_games = et_finals, st_id = last_id_1)
+agr_legs <- combine_legs(f_leg = f_leg, s_leg = s_leg, st_id = 1, type = "AGR")
+final_legs <- finals_leg_ids(final_games = et_finals, st_id = 1)
+
+
+games_1 <- games %>% 
+  filter(LEG == 1)
+games_2 <- games %>%
+  filter(LEG == 2)
+
+games <- combine_legs(f_leg = games_1, s_leg = games_2, st_id = 1, type = "G")
 
 et_agr <- rbind(et_legs, agr_legs, final_legs)
 et_agr$TYPE <- factor(et_agr$TYPE, levels = unique(et_agr$TYPE), labels = c("ET","AGR","F"))
-
 str(et_agr)
+
 
 save(et_agr, file = "data/et_agr_94_18.rda")
 write.csv(et_agr, file = "data/et_agr_94_18.csv")
+save(games, file = "data/no_et_games.rda")
+write.csv(games, file = "data/no_et_games.csv")
