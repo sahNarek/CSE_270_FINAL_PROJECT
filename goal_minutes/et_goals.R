@@ -206,8 +206,6 @@ missing <- get_missing_data()
 
 et_minutes <- rbind(et_minutes, missing)
 
-et_minutes <- et_minutes %>% 
-  filter(!(is.na(WS)))
 
 save(et_minutes, file =  "../data/et_minutes.rda")
 write.csv(et_minutes, file =  "../data/et_minutes.csv")

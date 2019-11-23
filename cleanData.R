@@ -218,6 +218,52 @@ finals_leg_ids <- function(final_games, st_id, type = "F"){
   return(result)
 }
 
+legs_info <- function(data) {
+  result <- c()
+  et_away <- data %>%
+    filter(LEG != "F")
+  seq1 <- seq(from = 1, to = nrow(et_away)-1, by = 2)
+  for(i in seq1){
+    game1 <- data[i,]
+    game2 <- data[i+1,]
+    
+    type <- game1$TYPE
+    leg_id <- game1$LEG_ID
+
+    team1 <- game1$HOMETEAM
+    team2 <- game1$AWAYTEAM
+
+    t1_hg <- game1$FTHG
+    t2_hg <- game2$FTHG + game2$ETHG 
+    
+    t1_ag <- game2$FTAG + game2$ETAG
+    t2_ag <- game1$FTAG
+    
+    t1_g <- t1_hg + t1_ag
+    t2_g <- t2_hg + t2_ag
+    
+    if(type == "AGR"){
+      winner <- ifelse(t1_ag > t2_ag, team1, team2)
+    }
+    else if (type == "ET"){
+      t1_g = t1_g + game2$PTAG
+      t2_g = t2_g + game2$PTHG
+      winner <- ifelse(t1_g > t2_g, team1, team2)
+    }
+    
+    leg1_date <- game1$DATE
+    leg2_date <- game2$DATE
+    
+    leg_result <- data.frame(COMP = game1$COMP, SEASON = game1$SEASON, ROUND = game1$ROUND,
+                             TEAM1 = team1, TEAM2 = team2, WINNER = winner,
+                             L1D = leg1_date, L2D = leg2_date, TYPE = type,
+                             LEG_ID = leg_id, T1G = t1_g, T2G = t2_g)
+    result <- rbind(result, leg_result)
+  }
+  return(result)
+}
+
+
 et_games <- get_et_games(data = ucl_po_94_18)
 et_fr <- get_first_games(data = et_games, source = ucl_po_94_18)
 et_fr <- clean_scores(et_fr)
@@ -226,9 +272,12 @@ et_fr <- et_fr %>%
 et_fr$LEG <- factor(et_fr$LEG, levels = unique(et_fr$LEG), labels = c("1"))
 
 et_def <- get_et_def()
-games <- get_no_et_games(data = et_def)
 
+games <- get_no_et_games(data = et_def)
 aways <- get_away_goal_games(data = games)
+
+games <- games %>%
+  anti_join(aways)
 
 et_games <- et_games %>%
   mutate(DATE = get_right_date(LEG, DATE))
@@ -265,10 +314,14 @@ games <- combine_legs(f_leg = games_1, s_leg = games_2, st_id = 1, type = "G")
 
 et_agr <- rbind(et_legs, agr_legs, final_legs)
 et_agr$TYPE <- factor(et_agr$TYPE, levels = unique(et_agr$TYPE), labels = c("ET","AGR","F"))
-str(et_agr)
+et_agr[is.na(et_agr)] <- 0
 
+legs_info <- legs_info(data = et_agr)
 
 save(et_agr, file = "data/et_agr_94_18.rda")
 write.csv(et_agr, file = "data/et_agr_94_18.csv")
 save(games, file = "data/no_et_games.rda")
 write.csv(games, file = "data/no_et_games.csv")
+save(legs_info, file = "data/legs_info.rda")
+write.csv(games, file = "data/legs_info.csv")
+
