@@ -1,401 +1,247 @@
-"","COMP","SEASON","ROUND","LEG","DATE","HOMETEAM","AWAYTEAM","FTHG","FTAG","HTHG","HTAG","ETHG","ETAG","PTHG","PTAG","LEG_ID","TYPE"
-"1","UCL","1994-1995","R8","1",1995-03-01,"FC Barcelona","Paris Saint-Germain",1,1,0,0,NA,NA,NA,NA,"G1","G"
-"2","UCL","1994-1995","R8","2",1995-03-15,"Paris Saint-Germain","FC Barcelona",2,1,0,0,NA,NA,NA,NA,"G1","G"
-"3","UCL","1994-1995","R8","1",1995-03-01,"Hajduk Split","AFC Ajax",0,0,0,0,NA,NA,NA,NA,"G2","G"
-"4","UCL","1994-1995","R8","2",1995-03-15,"AFC Ajax","Hajduk Split",3,0,2,0,NA,NA,NA,NA,"G2","G"
-"5","UCL","1994-1995","R8","1",1995-03-01,"AC Milan","SL Benfica",2,0,0,0,NA,NA,NA,NA,"G3","G"
-"6","UCL","1994-1995","R8","2",1995-03-15,"SL Benfica","AC Milan",0,0,0,0,NA,NA,NA,NA,"G3","G"
-"7","UCL","1995-1996","R8","1",1996-03-05,"Borussia Dortmund","AFC Ajax",0,2,0,1,NA,NA,NA,NA,"G4","G"
-"8","UCL","1995-1996","R8","2",1996-03-20,"AFC Ajax","Borussia Dortmund",1,0,0,0,NA,NA,NA,NA,"G4","G"
-"9","UCL","1995-1996","R8","1",1996-03-05,"Legia Warszawa","Panathinaikos",0,0,0,0,NA,NA,NA,NA,"G5","G"
-"10","UCL","1995-1996","R8","2",1996-03-20,"Panathinaikos","Legia Warszawa",3,0,1,0,NA,NA,NA,NA,"G5","G"
-"11","UCL","1995-1996","R8","1",1996-03-05,"FC Nantes","Spartak Moskva",2,0,1,0,NA,NA,NA,NA,"G6","G"
-"12","UCL","1995-1996","R8","2",1996-03-20,"Spartak Moskva","FC Nantes",2,2,2,0,NA,NA,NA,NA,"G6","G"
-"13","UCL","1995-1996","R8","1",1996-03-05,"Real Madrid","Juventus",1,0,1,0,NA,NA,NA,NA,"G7","G"
-"14","UCL","1995-1996","R8","2",1996-03-20,"Juventus","Real Madrid",2,0,1,0,NA,NA,NA,NA,"G7","G"
-"15","UCL","1996-1997","R8","1",1997-03-05,"Manchester United","FC Porto",4,0,2,0,NA,NA,NA,NA,"G8","G"
-"16","UCL","1996-1997","R8","2",1997-03-19,"FC Porto","Manchester United",0,0,0,0,NA,NA,NA,NA,"G8","G"
-"17","UCL","1996-1997","R8","1",1997-03-05,"Rosenborg BK","Juventus",1,1,0,0,NA,NA,NA,NA,"G9","G"
-"18","UCL","1996-1997","R8","2",1997-03-19,"Juventus","Rosenborg BK",2,0,1,0,NA,NA,NA,NA,"G9","G"
-"19","UCL","1996-1997","R8","1",1997-03-05,"Borussia Dortmund","AJ Auxerre",3,1,1,0,NA,NA,NA,NA,"G10","G"
-"20","UCL","1996-1997","R8","2",1997-03-19,"AJ Auxerre","Borussia Dortmund",0,1,0,0,NA,NA,NA,NA,"G10","G"
-"21","UCL","1997-1998","R8","1",1998-03-04,"Bayer Leverkusen","Real Madrid",1,1,1,0,NA,NA,NA,NA,"G11","G"
-"22","UCL","1997-1998","R8","2",1998-03-18,"Real Madrid","Bayer Leverkusen",3,0,0,0,NA,NA,NA,NA,"G11","G"
-"23","UCL","1997-1998","R8","1",1998-03-04,"Juventus","Dinamo Kiev",1,1,0,0,NA,NA,NA,NA,"G12","G"
-"24","UCL","1997-1998","R8","2",1998-03-18,"Dinamo Kiev","Juventus",1,4,0,1,NA,NA,NA,NA,"G12","G"
-"25","UCL","1998-1999","R8","1",1999-03-03,"Bayern München","1. FC Kaiserslautern",2,0,2,0,NA,NA,NA,NA,"G13","G"
-"26","UCL","1998-1999","R8","2",1999-03-17,"1. FC Kaiserslautern","Bayern München",0,4,0,3,NA,NA,NA,NA,"G13","G"
-"27","UCL","1998-1999","R8","1",1999-03-03,"Juventus","Olympiakos Piräus",2,1,1,0,NA,NA,NA,NA,"G14","G"
-"28","UCL","1998-1999","R8","2",1999-03-17,"Olympiakos Piräus","Juventus",1,1,1,0,NA,NA,NA,NA,"G14","G"
-"29","UCL","1998-1999","R8","1",1999-03-03,"Manchester United","Inter",2,0,2,0,NA,NA,NA,NA,"G15","G"
-"30","UCL","1998-1999","R8","2",1999-03-17,"Inter","Manchester United",1,1,0,0,NA,NA,NA,NA,"G15","G"
-"31","UCL","1998-1999","R8","1",1999-03-03,"Real Madrid","Dinamo Kiev",1,1,0,0,NA,NA,NA,NA,"G16","G"
-"32","UCL","1998-1999","R8","2",1999-03-17,"Dinamo Kiev","Real Madrid",2,0,0,0,NA,NA,NA,NA,"G16","G"
-"33","UCL","1999-2000","R8","1",2000-04-04,"FC Porto","Bayern München",1,1,0,0,NA,NA,NA,NA,"G17","G"
-"34","UCL","1999-2000","R8","2",2000-04-19,"Bayern München","FC Porto",2,1,1,0,NA,NA,NA,NA,"G17","G"
-"35","UCL","1999-2000","R8","1",2000-04-04,"Real Madrid","Manchester United",0,0,0,0,NA,NA,NA,NA,"G18","G"
-"36","UCL","1999-2000","R8","2",2000-04-19,"Manchester United","Real Madrid",2,3,0,1,NA,NA,NA,NA,"G18","G"
-"37","UCL","1999-2000","R8","1",2000-04-05,"Valencia CF","Lazio Roma",5,2,3,1,NA,NA,NA,NA,"G19","G"
-"38","UCL","1999-2000","R8","2",2000-04-18,"Lazio Roma","Valencia CF",1,0,0,0,NA,NA,NA,NA,"G19","G"
-"39","UCL","2000-2001","R8","1",2001-04-03,"Manchester United","Bayern München",0,1,0,0,NA,NA,NA,NA,"G20","G"
-"40","UCL","2000-2001","R8","2",2001-04-18,"Bayern München","Manchester United",2,1,2,0,NA,NA,NA,NA,"G20","G"
-"41","UCL","2000-2001","R8","1",2001-04-03,"Galatasaray","Real Madrid",3,2,0,2,NA,NA,NA,NA,"G21","G"
-"42","UCL","2000-2001","R8","2",2001-04-18,"Real Madrid","Galatasaray",3,0,3,0,NA,NA,NA,NA,"G21","G"
-"43","UCL","2000-2001","R8","1",2001-04-04,"Leeds United","Deportivo La Coruña",3,0,1,0,NA,NA,NA,NA,"G22","G"
-"44","UCL","2000-2001","R8","2",2001-04-17,"Deportivo La Coruña","Leeds United",2,0,1,0,NA,NA,NA,NA,"G22","G"
-"45","UCL","2001-2002","R8","1",2002-04-02,"Bayern München","Real Madrid",2,1,0,1,NA,NA,NA,NA,"G23","G"
-"46","UCL","2001-2002","R8","2",2002-04-10,"Real Madrid","Bayern München",2,0,0,0,NA,NA,NA,NA,"G23","G"
-"47","UCL","2001-2002","R8","1",2002-04-02,"Deportivo La Coruña","Manchester United",0,2,0,2,NA,NA,NA,NA,"G24","G"
-"48","UCL","2001-2002","R8","2",2002-04-10,"Manchester United","Deportivo La Coruña",3,2,1,1,NA,NA,NA,NA,"G24","G"
-"49","UCL","2001-2002","R8","1",2002-04-03,"Panathinaikos","FC Barcelona",1,0,0,0,NA,NA,NA,NA,"G25","G"
-"50","UCL","2001-2002","R8","2",2002-04-09,"FC Barcelona","Panathinaikos",3,1,1,1,NA,NA,NA,NA,"G25","G"
-"51","UCL","2001-2002","R8","1",2002-04-03,"Liverpool FC","Bayer Leverkusen",1,0,1,0,NA,NA,NA,NA,"G26","G"
-"52","UCL","2001-2002","R8","2",2002-04-09,"Bayer Leverkusen","Liverpool FC",4,2,1,1,NA,NA,NA,NA,"G26","G"
-"53","UCL","2002-2003","R8","1",2003-04-08,"Real Madrid","Manchester United",3,1,2,0,NA,NA,NA,NA,"G27","G"
-"54","UCL","2002-2003","R8","2",2003-04-23,"Manchester United","Real Madrid",4,3,1,1,NA,NA,NA,NA,"G27","G"
-"55","UCL","2002-2003","R8","1",2003-04-08,"AFC Ajax","AC Milan",0,0,0,0,NA,NA,NA,NA,"G28","G"
-"56","UCL","2002-2003","R8","2",2003-04-23,"AC Milan","AFC Ajax",3,2,1,0,NA,NA,NA,NA,"G28","G"
-"57","UCL","1994-1995","R4","1",1995-04-05,"Bayern München","AFC Ajax",0,0,0,0,NA,NA,NA,NA,"G29","G"
-"58","UCL","1994-1995","R4","2",1995-04-19,"AFC Ajax","Bayern München",5,2,3,1,NA,NA,NA,NA,"G29","G"
-"59","UCL","1994-1995","R4","1",1995-04-05,"Paris Saint-Germain","AC Milan",0,1,0,0,NA,NA,NA,NA,"G30","G"
-"60","UCL","1994-1995","R4","2",1995-04-19,"AC Milan","Paris Saint-Germain",2,0,1,0,NA,NA,NA,NA,"G30","G"
-"61","UCL","1995-1996","R4","1",1996-04-03,"AFC Ajax","Panathinaikos",0,1,0,0,NA,NA,NA,NA,"G31","G"
-"62","UCL","1995-1996","R4","2",1996-04-17,"Panathinaikos","AFC Ajax",0,3,0,1,NA,NA,NA,NA,"G31","G"
-"63","UCL","1995-1996","R4","1",1996-04-03,"Juventus","FC Nantes",2,0,0,0,NA,NA,NA,NA,"G32","G"
-"64","UCL","1995-1996","R4","2",1996-04-17,"FC Nantes","Juventus",3,2,1,1,NA,NA,NA,NA,"G32","G"
-"65","UCL","1996-1997","R4","1",1997-04-09,"AFC Ajax","Juventus",1,2,0,2,NA,NA,NA,NA,"G33","G"
-"66","UCL","1996-1997","R4","2",1997-04-23,"Juventus","AFC Ajax",4,1,2,0,NA,NA,NA,NA,"G33","G"
-"67","UCL","1996-1997","R4","1",1997-04-09,"Borussia Dortmund","Manchester United",1,0,0,0,NA,NA,NA,NA,"G34","G"
-"68","UCL","1996-1997","R4","2",1997-04-23,"Manchester United","Borussia Dortmund",0,1,0,1,NA,NA,NA,NA,"G34","G"
-"69","UCL","1997-1998","R4","1",1998-04-01,"Juventus","AS Monaco",4,1,2,1,NA,NA,NA,NA,"G35","G"
-"70","UCL","1997-1998","R4","2",1998-04-15,"AS Monaco","Juventus",3,2,1,1,NA,NA,NA,NA,"G35","G"
-"71","UCL","1997-1998","R4","1",1998-04-01,"Real Madrid","Borussia Dortmund",2,0,1,0,NA,NA,NA,NA,"G36","G"
-"72","UCL","1997-1998","R4","2",1998-04-15,"Borussia Dortmund","Real Madrid",0,0,0,0,NA,NA,NA,NA,"G36","G"
-"73","UCL","1998-1999","R4","1",1999-04-07,"Dinamo Kiev","Bayern München",3,3,2,1,NA,NA,NA,NA,"G37","G"
-"74","UCL","1998-1999","R4","2",1999-04-21,"Bayern München","Dinamo Kiev",1,0,1,0,NA,NA,NA,NA,"G37","G"
-"75","UCL","1998-1999","R4","1",1999-04-07,"Manchester United","Juventus",1,1,0,1,NA,NA,NA,NA,"G38","G"
-"76","UCL","1998-1999","R4","2",1999-04-21,"Juventus","Manchester United",2,3,2,2,NA,NA,NA,NA,"G38","G"
-"77","UCL","1999-2000","R4","1",2000-05-02,"Valencia CF","FC Barcelona",4,1,3,1,NA,NA,NA,NA,"G39","G"
-"78","UCL","1999-2000","R4","2",2000-05-10,"FC Barcelona","Valencia CF",2,1,0,0,NA,NA,NA,NA,"G39","G"
-"79","UCL","1999-2000","R4","1",2000-05-02,"Real Madrid","Bayern München",2,0,2,0,NA,NA,NA,NA,"G40","G"
-"80","UCL","1999-2000","R4","2",2000-05-10,"Bayern München","Real Madrid",2,1,1,1,NA,NA,NA,NA,"G40","G"
-"81","UCL","2000-2001","R4","1",2001-05-01,"Real Madrid","Bayern München",0,1,0,0,NA,NA,NA,NA,"G41","G"
-"82","UCL","2000-2001","R4","2",2001-05-09,"Bayern München","Real Madrid",2,1,2,1,NA,NA,NA,NA,"G41","G"
-"83","UCL","2000-2001","R4","1",2001-05-02,"Leeds United","Valencia CF",0,0,0,0,NA,NA,NA,NA,"G42","G"
-"84","UCL","2000-2001","R4","2",2001-05-08,"Valencia CF","Leeds United",3,0,1,0,NA,NA,NA,NA,"G42","G"
-"85","UCL","2001-2002","R4","1",2002-04-23,"FC Barcelona","Real Madrid",0,2,0,0,NA,NA,NA,NA,"G43","G"
-"86","UCL","2001-2002","R4","2",2002-05-01,"Real Madrid","FC Barcelona",1,1,1,0,NA,NA,NA,NA,"G43","G"
-"87","UCL","2002-2003","R4","1",2003-05-06,"Real Madrid","Juventus",2,1,1,1,NA,NA,NA,NA,"G44","G"
-"88","UCL","2002-2003","R4","2",2003-05-14,"Juventus","Real Madrid",3,1,2,0,NA,NA,NA,NA,"G44","G"
-"89","UCL","2003-2004","R8","1",2004-03-23,"FC Porto","Olympique Lyon",2,0,1,0,NA,NA,NA,NA,"G45","G"
-"90","UCL","2003-2004","R8","2",2004-04-07,"Olympique Lyon","FC Porto",2,2,1,1,NA,NA,NA,NA,"G45","G"
-"91","UCL","2003-2004","R8","1",2004-03-23,"AC Milan","Deportivo La Coruña",4,1,1,1,NA,NA,NA,NA,"G46","G"
-"92","UCL","2003-2004","R8","2",2004-04-07,"Deportivo La Coruña","AC Milan",4,0,3,0,NA,NA,NA,NA,"G46","G"
-"93","UCL","2003-2004","R8","1",2004-03-24,"Chelsea FC","Arsenal FC",1,1,0,0,NA,NA,NA,NA,"G47","G"
-"94","UCL","2003-2004","R8","2",2004-04-06,"Arsenal FC","Chelsea FC",1,2,1,0,NA,NA,NA,NA,"G47","G"
-"95","UCL","2004-2005","R8","1",2005-04-05,"Liverpool FC","Juventus",2,1,2,0,NA,NA,NA,NA,"G48","G"
-"96","UCL","2004-2005","R8","2",2005-04-13,"Juventus","Liverpool FC",0,0,0,0,NA,NA,NA,NA,"G48","G"
-"97","UCL","2004-2005","R8","1",2005-04-06,"Chelsea FC","Bayern München",4,2,1,0,NA,NA,NA,NA,"G49","G"
-"98","UCL","2004-2005","R8","2",2005-04-12,"Bayern München","Chelsea FC",3,2,0,1,NA,NA,NA,NA,"G49","G"
-"99","UCL","2005-2006","R8","1",2006-03-28,"Arsenal FC","Juventus",2,0,1,0,NA,NA,NA,NA,"G50","G"
-"100","UCL","2005-2006","R8","2",2006-04-05,"Juventus","Arsenal FC",0,0,0,0,NA,NA,NA,NA,"G50","G"
-"101","UCL","2005-2006","R8","1",2006-03-28,"SL Benfica","FC Barcelona",0,0,0,0,NA,NA,NA,NA,"G51","G"
-"102","UCL","2005-2006","R8","2",2006-04-05,"FC Barcelona","SL Benfica",2,0,1,0,NA,NA,NA,NA,"G51","G"
-"103","UCL","2005-2006","R8","1",2006-03-29,"Olympique Lyon","AC Milan",0,0,0,0,NA,NA,NA,NA,"G52","G"
-"104","UCL","2005-2006","R8","2",2006-04-04,"AC Milan","Olympique Lyon",3,1,1,1,NA,NA,NA,NA,"G52","G"
-"105","UCL","2006-2007","R8","1",2007-04-03,"AC Milan","Bayern München",2,2,1,0,NA,NA,NA,NA,"G53","G"
-"106","UCL","2006-2007","R8","2",2007-04-11,"Bayern München","AC Milan",0,2,0,2,NA,NA,NA,NA,"G53","G"
-"107","UCL","2006-2007","R8","1",2007-04-03,"PSV Eindhoven","Liverpool FC",0,3,0,1,NA,NA,NA,NA,"G54","G"
-"108","UCL","2006-2007","R8","2",2007-04-11,"Liverpool FC","PSV Eindhoven",1,0,0,0,NA,NA,NA,NA,"G54","G"
-"109","UCL","2006-2007","R8","1",2007-04-04,"AS Roma","Manchester United",2,1,1,0,NA,NA,NA,NA,"G55","G"
-"110","UCL","2006-2007","R8","2",2007-04-10,"Manchester United","AS Roma",7,1,4,0,NA,NA,NA,NA,"G55","G"
-"111","UCL","2006-2007","R8","1",2007-04-04,"Chelsea FC","Valencia CF",1,1,0,1,NA,NA,NA,NA,"G56","G"
-"112","UCL","2006-2007","R8","2",2007-04-10,"Valencia CF","Chelsea FC",1,2,1,0,NA,NA,NA,NA,"G56","G"
-"113","UCL","2003-2004","R4","1",2004-04-20,"AS Monaco","Chelsea FC",3,1,1,1,NA,NA,NA,NA,"G57","G"
-"114","UCL","2003-2004","R4","2",2004-05-05,"Chelsea FC","AS Monaco",2,2,2,1,NA,NA,NA,NA,"G57","G"
-"115","UCL","2003-2004","R4","1",2004-04-21,"FC Porto","Deportivo La Coruña",0,0,0,0,NA,NA,NA,NA,"G58","G"
-"116","UCL","2003-2004","R4","2",2004-05-04,"Deportivo La Coruña","FC Porto",0,1,0,0,NA,NA,NA,NA,"G58","G"
-"117","UCL","2004-2005","R4","1",2005-04-27,"Chelsea FC","Liverpool FC",0,0,0,0,NA,NA,NA,NA,"G59","G"
-"118","UCL","2004-2005","R4","2",2005-05-03,"Liverpool FC","Chelsea FC",1,0,1,0,NA,NA,NA,NA,"G59","G"
-"119","UCL","2005-2006","R4","1",2006-04-18,"AC Milan","FC Barcelona",0,1,0,0,NA,NA,NA,NA,"G60","G"
-"120","UCL","2005-2006","R4","2",2006-04-26,"FC Barcelona","AC Milan",0,0,0,0,NA,NA,NA,NA,"G60","G"
-"121","UCL","2005-2006","R4","1",2006-04-19,"Arsenal FC","Villarreal CF",1,0,1,0,NA,NA,NA,NA,"G61","G"
-"122","UCL","2005-2006","R4","2",2006-04-25,"Villarreal CF","Arsenal FC",0,0,0,0,NA,NA,NA,NA,"G61","G"
-"123","UCL","2006-2007","R4","1",2007-04-24,"Manchester United","AC Milan",3,2,1,2,NA,NA,NA,NA,"G62","G"
-"124","UCL","2006-2007","R4","2",2007-05-02,"AC Milan","Manchester United",3,0,2,0,NA,NA,NA,NA,"G62","G"
-"125","UCL","2007-2008","R16","1",2008-02-19,"Liverpool FC","Inter",2,0,0,0,NA,NA,NA,NA,"G63","G"
-"126","UCL","2007-2008","R16","2",2008-03-11,"Inter","Liverpool FC",0,1,0,0,NA,NA,NA,NA,"G63","G"
-"127","UCL","2007-2008","R16","1",2008-02-19,"AS Roma","Real Madrid",2,1,1,1,NA,NA,NA,NA,"G64","G"
-"128","UCL","2007-2008","R16","2",2008-03-05,"Real Madrid","AS Roma",1,2,0,0,NA,NA,NA,NA,"G64","G"
-"129","UCL","2007-2008","R16","1",2008-02-19,"Olympiakos Piräus","Chelsea FC",0,0,0,0,NA,NA,NA,NA,"G65","G"
-"130","UCL","2007-2008","R16","2",2008-03-05,"Chelsea FC","Olympiakos Piräus",3,0,2,0,NA,NA,NA,NA,"G65","G"
-"131","UCL","2007-2008","R16","1",2008-02-20,"Celtic FC","FC Barcelona",2,3,2,1,NA,NA,NA,NA,"G66","G"
-"132","UCL","2007-2008","R16","2",2008-03-04,"FC Barcelona","Celtic FC",1,0,1,0,NA,NA,NA,NA,"G66","G"
-"133","UCL","2007-2008","R16","1",2008-02-20,"Olympique Lyon","Manchester United",1,1,0,0,NA,NA,NA,NA,"G67","G"
-"134","UCL","2007-2008","R16","2",2008-03-04,"Manchester United","Olympique Lyon",1,0,1,0,NA,NA,NA,NA,"G67","G"
-"135","UCL","2007-2008","R16","1",2008-02-20,"Arsenal FC","AC Milan",0,0,0,0,NA,NA,NA,NA,"G68","G"
-"136","UCL","2007-2008","R16","2",2008-03-04,"AC Milan","Arsenal FC",0,2,0,0,NA,NA,NA,NA,"G68","G"
-"137","UCL","2008-2009","R16","1",2009-02-24,"Olympique Lyon","FC Barcelona",1,1,1,0,NA,NA,NA,NA,"G69","G"
-"138","UCL","2008-2009","R16","2",2009-03-11,"FC Barcelona","Olympique Lyon",5,2,4,1,NA,NA,NA,NA,"G69","G"
-"139","UCL","2008-2009","R16","1",2009-02-24,"Inter","Manchester United",0,0,0,0,NA,NA,NA,NA,"G70","G"
-"140","UCL","2008-2009","R16","2",2009-03-11,"Manchester United","Inter",2,0,1,0,NA,NA,NA,NA,"G70","G"
-"141","UCL","2008-2009","R16","1",2009-02-25,"Chelsea FC","Juventus",1,0,1,0,NA,NA,NA,NA,"G71","G"
-"142","UCL","2008-2009","R16","2",2009-03-10,"Juventus","Chelsea FC",2,2,1,1,NA,NA,NA,NA,"G71","G"
-"143","UCL","2008-2009","R16","1",2009-02-25,"Villarreal CF","Panathinaikos",1,1,0,0,NA,NA,NA,NA,"G72","G"
-"144","UCL","2008-2009","R16","2",2009-03-10,"Panathinaikos","Villarreal CF",1,2,0,0,NA,NA,NA,NA,"G72","G"
-"145","UCL","2008-2009","R16","1",2009-02-25,"Sporting CP","Bayern München",0,5,0,1,NA,NA,NA,NA,"G73","G"
-"146","UCL","2008-2009","R16","2",2009-03-10,"Bayern München","Sporting CP",7,1,4,1,NA,NA,NA,NA,"G73","G"
-"147","UCL","2008-2009","R16","1",2009-02-25,"Real Madrid","Liverpool FC",0,1,0,0,NA,NA,NA,NA,"G74","G"
-"148","UCL","2008-2009","R16","2",2009-03-10,"Liverpool FC","Real Madrid",4,0,2,0,NA,NA,NA,NA,"G74","G"
-"149","UCL","2009-2010","R16","1",2010-02-16,"Olympique Lyon","Real Madrid",1,0,0,0,NA,NA,NA,NA,"G75","G"
-"150","UCL","2009-2010","R16","2",2010-03-10,"Real Madrid","Olympique Lyon",1,1,1,0,NA,NA,NA,NA,"G75","G"
-"151","UCL","2009-2010","R16","1",2010-02-16,"AC Milan","Manchester United",2,3,1,1,NA,NA,NA,NA,"G76","G"
-"152","UCL","2009-2010","R16","2",2010-03-10,"Manchester United","AC Milan",4,0,1,0,NA,NA,NA,NA,"G76","G"
-"153","UCL","2009-2010","R16","1",2010-02-17,"FC Porto","Arsenal FC",2,1,1,1,NA,NA,NA,NA,"G77","G"
-"154","UCL","2009-2010","R16","2",2010-03-09,"Arsenal FC","FC Porto",5,0,2,0,NA,NA,NA,NA,"G77","G"
-"155","UCL","2009-2010","R16","1",2010-02-23,"VfB Stuttgart","FC Barcelona",1,1,1,0,NA,NA,NA,NA,"G78","G"
-"156","UCL","2009-2010","R16","2",2010-03-17,"FC Barcelona","VfB Stuttgart",4,0,2,0,NA,NA,NA,NA,"G78","G"
-"157","UCL","2009-2010","R16","1",2010-02-23,"Olympiakos Piräus","Girondins Bordeaux",0,1,0,1,NA,NA,NA,NA,"G79","G"
-"158","UCL","2009-2010","R16","2",2010-03-17,"Girondins Bordeaux","Olympiakos Piräus",2,1,1,0,NA,NA,NA,NA,"G79","G"
-"159","UCL","2009-2010","R16","1",2010-02-24,"CSKA Moskva","Sevilla FC",1,1,0,1,NA,NA,NA,NA,"G80","G"
-"160","UCL","2009-2010","R16","2",2010-03-16,"Sevilla FC","CSKA Moskva",1,2,1,1,NA,NA,NA,NA,"G80","G"
-"161","UCL","2009-2010","R16","1",2010-02-24,"Inter","Chelsea FC",2,1,1,0,NA,NA,NA,NA,"G81","G"
-"162","UCL","2009-2010","R16","2",2010-03-16,"Chelsea FC","Inter",0,1,0,0,NA,NA,NA,NA,"G81","G"
-"163","UCL","2010-2011","R16","1",2011-02-15,"AC Milan","Tottenham Hotspur",0,1,0,0,NA,NA,NA,NA,"G82","G"
-"164","UCL","2010-2011","R16","2",2011-03-09,"Tottenham Hotspur","AC Milan",0,0,0,0,NA,NA,NA,NA,"G82","G"
-"165","UCL","2010-2011","R16","1",2011-02-15,"Valencia CF","FC Schalke 04",1,1,1,0,NA,NA,NA,NA,"G83","G"
-"166","UCL","2010-2011","R16","2",2011-03-09,"FC Schalke 04","Valencia CF",3,1,1,1,NA,NA,NA,NA,"G83","G"
-"167","UCL","2010-2011","R16","1",2011-02-16,"AS Roma","Shakhtar Donetsk",2,3,1,3,NA,NA,NA,NA,"G84","G"
-"168","UCL","2010-2011","R16","2",2011-03-08,"Shakhtar Donetsk","AS Roma",3,0,1,0,NA,NA,NA,NA,"G84","G"
-"169","UCL","2010-2011","R16","1",2011-02-16,"Arsenal FC","FC Barcelona",2,1,0,1,NA,NA,NA,NA,"G85","G"
-"170","UCL","2010-2011","R16","2",2011-03-08,"FC Barcelona","Arsenal FC",3,1,1,0,NA,NA,NA,NA,"G85","G"
-"171","UCL","2010-2011","R16","1",2011-02-22,"Olympique Lyon","Real Madrid",1,1,0,0,NA,NA,NA,NA,"G86","G"
-"172","UCL","2010-2011","R16","2",2011-03-16,"Real Madrid","Olympique Lyon",3,0,1,0,NA,NA,NA,NA,"G86","G"
-"173","UCL","2010-2011","R16","1",2011-02-22,"FC København","Chelsea FC",0,2,0,1,NA,NA,NA,NA,"G87","G"
-"174","UCL","2010-2011","R16","2",2011-03-16,"Chelsea FC","FC København",0,0,0,0,NA,NA,NA,NA,"G87","G"
-"175","UCL","2010-2011","R16","1",2011-02-23,"Olympique Marseille","Manchester United",0,0,0,0,NA,NA,NA,NA,"G88","G"
-"176","UCL","2010-2011","R16","2",2011-03-15,"Manchester United","Olympique Marseille",2,1,1,0,NA,NA,NA,NA,"G88","G"
-"177","UCL","2011-2012","R16","1",2012-02-14,"Bayer Leverkusen","FC Barcelona",1,3,0,1,NA,NA,NA,NA,"G89","G"
-"178","UCL","2011-2012","R16","2",2012-03-07,"FC Barcelona","Bayer Leverkusen",7,1,2,0,NA,NA,NA,NA,"G89","G"
-"179","UCL","2011-2012","R16","1",2012-02-15,"Zenit St. Petersburg","SL Benfica",3,2,1,1,NA,NA,NA,NA,"G90","G"
-"180","UCL","2011-2012","R16","2",2012-03-06,"SL Benfica","Zenit St. Petersburg",2,0,1,0,NA,NA,NA,NA,"G90","G"
-"181","UCL","2011-2012","R16","1",2012-02-15,"AC Milan","Arsenal FC",4,0,2,0,NA,NA,NA,NA,"G91","G"
-"182","UCL","2011-2012","R16","2",2012-03-06,"Arsenal FC","AC Milan",3,0,3,0,NA,NA,NA,NA,"G91","G"
-"183","UCL","2011-2012","R16","1",2012-02-21,"CSKA Moskva","Real Madrid",1,1,0,1,NA,NA,NA,NA,"G92","G"
-"184","UCL","2011-2012","R16","2",2012-03-14,"Real Madrid","CSKA Moskva",4,1,1,0,NA,NA,NA,NA,"G92","G"
-"185","UCL","2011-2012","R16","1",2012-02-22,"FC Basel","Bayern München",1,0,0,0,NA,NA,NA,NA,"G93","G"
-"186","UCL","2011-2012","R16","2",2012-03-13,"Bayern München","FC Basel",7,0,3,0,NA,NA,NA,NA,"G93","G"
-"187","UCL","2012-2013","R16","1",2013-02-12,"Celtic FC","Juventus",0,3,0,1,NA,NA,NA,NA,"G94","G"
-"188","UCL","2012-2013","R16","2",2013-03-06,"Juventus","Celtic FC",2,0,1,0,NA,NA,NA,NA,"G94","G"
-"189","UCL","2012-2013","R16","1",2013-02-12,"Valencia CF","Paris Saint-Germain",1,2,0,2,NA,NA,NA,NA,"G95","G"
-"190","UCL","2012-2013","R16","2",2013-03-06,"Paris Saint-Germain","Valencia CF",1,1,0,0,NA,NA,NA,NA,"G95","G"
-"191","UCL","2012-2013","R16","1",2013-02-13,"Shakhtar Donetsk","Borussia Dortmund",2,2,1,1,NA,NA,NA,NA,"G96","G"
-"192","UCL","2012-2013","R16","2",2013-03-05,"Borussia Dortmund","Shakhtar Donetsk",3,0,2,0,NA,NA,NA,NA,"G96","G"
-"193","UCL","2012-2013","R16","1",2013-02-13,"Real Madrid","Manchester United",1,1,1,1,NA,NA,NA,NA,"G97","G"
-"194","UCL","2012-2013","R16","2",2013-03-05,"Manchester United","Real Madrid",1,2,0,0,NA,NA,NA,NA,"G97","G"
-"195","UCL","2012-2013","R16","1",2013-02-19,"FC Porto","Málaga CF",1,0,0,0,NA,NA,NA,NA,"G98","G"
-"196","UCL","2012-2013","R16","2",2013-03-13,"Málaga CF","FC Porto",2,0,1,0,NA,NA,NA,NA,"G98","G"
-"197","UCL","2012-2013","R16","1",2013-02-20,"Galatasaray","FC Schalke 04",1,1,1,1,NA,NA,NA,NA,"G99","G"
-"198","UCL","2012-2013","R16","2",2013-03-12,"FC Schalke 04","Galatasaray",2,3,1,2,NA,NA,NA,NA,"G99","G"
-"199","UCL","2012-2013","R16","1",2013-02-20,"AC Milan","FC Barcelona",2,0,0,0,NA,NA,NA,NA,"G100","G"
-"200","UCL","2012-2013","R16","2",2013-03-12,"FC Barcelona","AC Milan",4,0,2,0,NA,NA,NA,NA,"G100","G"
-"201","UCL","2013-2014","R16","1",2014-02-18,"Manchester City","FC Barcelona",0,2,0,0,NA,NA,NA,NA,"G101","G"
-"202","UCL","2013-2014","R16","2",2014-03-12,"FC Barcelona","Manchester City",2,1,0,0,NA,NA,NA,NA,"G101","G"
-"203","UCL","2013-2014","R16","1",2014-02-18,"Bayer Leverkusen","Paris Saint-Germain",0,4,0,3,NA,NA,NA,NA,"G102","G"
-"204","UCL","2013-2014","R16","2",2014-03-12,"Paris Saint-Germain","Bayer Leverkusen",2,1,1,1,NA,NA,NA,NA,"G102","G"
-"205","UCL","2013-2014","R16","1",2014-02-19,"AC Milan","Atlético Madrid",0,1,0,0,NA,NA,NA,NA,"G103","G"
-"206","UCL","2013-2014","R16","2",2014-03-11,"Atlético Madrid","AC Milan",4,1,2,1,NA,NA,NA,NA,"G103","G"
-"207","UCL","2013-2014","R16","1",2014-02-19,"Arsenal FC","Bayern München",0,2,0,0,NA,NA,NA,NA,"G104","G"
-"208","UCL","2013-2014","R16","2",2014-03-11,"Bayern München","Arsenal FC",1,1,0,0,NA,NA,NA,NA,"G104","G"
-"209","UCL","2013-2014","R16","1",2014-02-25,"Zenit St. Petersburg","Borussia Dortmund",2,4,0,2,NA,NA,NA,NA,"G105","G"
-"210","UCL","2013-2014","R16","2",2014-03-19,"Borussia Dortmund","Zenit St. Petersburg",1,2,1,1,NA,NA,NA,NA,"G105","G"
-"211","UCL","2013-2014","R16","1",2014-02-25,"Olympiakos Piräus","Manchester United",2,0,1,0,NA,NA,NA,NA,"G106","G"
-"212","UCL","2013-2014","R16","2",2014-03-19,"Manchester United","Olympiakos Piräus",3,0,2,0,NA,NA,NA,NA,"G106","G"
-"213","UCL","2013-2014","R16","1",2014-02-26,"Galatasaray","Chelsea FC",1,1,0,1,NA,NA,NA,NA,"G107","G"
-"214","UCL","2013-2014","R16","2",2014-03-18,"Chelsea FC","Galatasaray",2,0,2,0,NA,NA,NA,NA,"G107","G"
-"215","UCL","2013-2014","R16","1",2014-02-26,"FC Schalke 04","Real Madrid",1,6,0,2,NA,NA,NA,NA,"G108","G"
-"216","UCL","2013-2014","R16","2",2014-03-18,"Real Madrid","FC Schalke 04",3,1,1,1,NA,NA,NA,NA,"G108","G"
-"217","UCL","2014-2015","R16","1",2015-02-17,"Shakhtar Donetsk","Bayern München",0,0,0,0,NA,NA,NA,NA,"G109","G"
-"218","UCL","2014-2015","R16","2",2015-03-11,"Bayern München","Shakhtar Donetsk",7,0,2,0,NA,NA,NA,NA,"G109","G"
-"219","UCL","2014-2015","R16","1",2015-02-18,"FC Schalke 04","Real Madrid",0,2,0,1,NA,NA,NA,NA,"G110","G"
-"220","UCL","2014-2015","R16","2",2015-03-10,"Real Madrid","FC Schalke 04",3,4,2,2,NA,NA,NA,NA,"G110","G"
-"221","UCL","2014-2015","R16","1",2015-02-18,"FC Basel","FC Porto",1,1,1,0,NA,NA,NA,NA,"G111","G"
-"222","UCL","2014-2015","R16","2",2015-03-10,"FC Porto","FC Basel",4,0,1,0,NA,NA,NA,NA,"G111","G"
-"223","UCL","2014-2015","R16","1",2015-02-24,"Manchester City","FC Barcelona",1,2,0,2,NA,NA,NA,NA,"G112","G"
-"224","UCL","2014-2015","R16","2",2015-03-18,"FC Barcelona","Manchester City",1,0,1,0,NA,NA,NA,NA,"G112","G"
-"225","UCL","2014-2015","R16","1",2015-02-24,"Juventus","Borussia Dortmund",2,1,2,1,NA,NA,NA,NA,"G113","G"
-"226","UCL","2014-2015","R16","2",2015-03-18,"Borussia Dortmund","Juventus",0,3,0,1,NA,NA,NA,NA,"G113","G"
-"227","UCL","2015-2016","R16","1",2016-02-16,"Paris Saint-Germain","Chelsea FC",2,1,1,1,NA,NA,NA,NA,"G114","G"
-"228","UCL","2015-2016","R16","2",2016-03-09,"Chelsea FC","Paris Saint-Germain",1,2,1,1,NA,NA,NA,NA,"G114","G"
-"229","UCL","2015-2016","R16","1",2016-02-16,"SL Benfica","Zenit St. Petersburg",1,0,0,0,NA,NA,NA,NA,"G115","G"
-"230","UCL","2015-2016","R16","2",2016-03-09,"Zenit St. Petersburg","SL Benfica",1,2,0,0,NA,NA,NA,NA,"G115","G"
-"231","UCL","2015-2016","R16","1",2016-02-17,"KAA Gent","VfL Wolfsburg",2,3,0,1,NA,NA,NA,NA,"G116","G"
-"232","UCL","2015-2016","R16","2",2016-03-08,"VfL Wolfsburg","KAA Gent",1,0,0,0,NA,NA,NA,NA,"G116","G"
-"233","UCL","2015-2016","R16","1",2016-02-17,"AS Roma","Real Madrid",0,2,0,0,NA,NA,NA,NA,"G117","G"
-"234","UCL","2015-2016","R16","2",2016-03-08,"Real Madrid","AS Roma",2,0,0,0,NA,NA,NA,NA,"G117","G"
-"235","UCL","2015-2016","R16","1",2016-02-23,"Arsenal FC","FC Barcelona",0,2,0,0,NA,NA,NA,NA,"G118","G"
-"236","UCL","2015-2016","R16","2",2016-03-16,"FC Barcelona","Arsenal FC",3,1,1,0,NA,NA,NA,NA,"G118","G"
-"237","UCL","2015-2016","R16","1",2016-02-24,"Dinamo Kiev","Manchester City",1,3,0,2,NA,NA,NA,NA,"G119","G"
-"238","UCL","2015-2016","R16","2",2016-03-15,"Manchester City","Dinamo Kiev",0,0,0,0,NA,NA,NA,NA,"G119","G"
-"239","UCL","2016-2017","R16","1",2017-02-14,"SL Benfica","Borussia Dortmund",1,0,0,0,NA,NA,NA,NA,"G120","G"
-"240","UCL","2016-2017","R16","2",2017-03-08,"Borussia Dortmund","SL Benfica",4,0,1,0,NA,NA,NA,NA,"G120","G"
-"241","UCL","2016-2017","R16","1",2017-02-14,"Paris Saint-Germain","FC Barcelona",4,0,2,0,NA,NA,NA,NA,"G121","G"
-"242","UCL","2016-2017","R16","2",2017-03-08,"FC Barcelona","Paris Saint-Germain",6,1,2,0,NA,NA,NA,NA,"G121","G"
-"243","UCL","2016-2017","R16","1",2017-02-15,"Real Madrid","SSC Napoli",3,1,1,1,NA,NA,NA,NA,"G122","G"
-"244","UCL","2016-2017","R16","2",2017-03-07,"SSC Napoli","Real Madrid",1,3,1,0,NA,NA,NA,NA,"G122","G"
-"245","UCL","2016-2017","R16","1",2017-02-15,"Bayern München","Arsenal FC",5,1,1,1,NA,NA,NA,NA,"G123","G"
-"246","UCL","2016-2017","R16","2",2017-03-07,"Arsenal FC","Bayern München",1,5,1,0,NA,NA,NA,NA,"G123","G"
-"247","UCL","2016-2017","R16","1",2017-02-21,"Bayer Leverkusen","Atlético Madrid",2,4,0,2,NA,NA,NA,NA,"G124","G"
-"248","UCL","2016-2017","R16","2",2017-03-15,"Atlético Madrid","Bayer Leverkusen",0,0,0,0,NA,NA,NA,NA,"G124","G"
-"249","UCL","2016-2017","R16","1",2017-02-22,"FC Porto","Juventus",0,2,0,0,NA,NA,NA,NA,"G125","G"
-"250","UCL","2016-2017","R16","2",2017-03-14,"Juventus","FC Porto",1,0,1,0,NA,NA,NA,NA,"G125","G"
-"251","UCL","2016-2017","R16","1",2017-02-22,"Sevilla FC","Leicester City",2,1,1,0,NA,NA,NA,NA,"G126","G"
-"252","UCL","2016-2017","R16","2",2017-03-14,"Leicester City","Sevilla FC",2,0,1,0,NA,NA,NA,NA,"G126","G"
-"253","UCL","2017-2018","R16","1",2018-02-13,"Juventus","Tottenham Hotspur",2,2,2,1,NA,NA,NA,NA,"G127","G"
-"254","UCL","2017-2018","R16","2",2018-03-07,"Tottenham Hotspur","Juventus",1,2,1,0,NA,NA,NA,NA,"G127","G"
-"255","UCL","2017-2018","R16","1",2018-02-13,"FC Basel","Manchester City",0,4,0,3,NA,NA,NA,NA,"G128","G"
-"256","UCL","2017-2018","R16","2",2018-03-07,"Manchester City","FC Basel",1,2,1,1,NA,NA,NA,NA,"G128","G"
-"257","UCL","2017-2018","R16","1",2018-02-14,"FC Porto","Liverpool FC",0,5,0,2,NA,NA,NA,NA,"G129","G"
-"258","UCL","2017-2018","R16","2",2018-03-06,"Liverpool FC","FC Porto",0,0,0,0,NA,NA,NA,NA,"G129","G"
-"259","UCL","2017-2018","R16","1",2018-02-14,"Real Madrid","Paris Saint-Germain",3,1,1,1,NA,NA,NA,NA,"G130","G"
-"260","UCL","2017-2018","R16","2",2018-03-06,"Paris Saint-Germain","Real Madrid",1,2,0,0,NA,NA,NA,NA,"G130","G"
-"261","UCL","2017-2018","R16","1",2018-02-20,"Chelsea FC","FC Barcelona",1,1,0,0,NA,NA,NA,NA,"G131","G"
-"262","UCL","2017-2018","R16","2",2018-03-14,"FC Barcelona","Chelsea FC",3,0,2,0,NA,NA,NA,NA,"G131","G"
-"263","UCL","2017-2018","R16","1",2018-02-20,"Bayern München","Beşiktaş",5,0,1,0,NA,NA,NA,NA,"G132","G"
-"264","UCL","2017-2018","R16","2",2018-03-14,"Beşiktaş","Bayern München",1,3,0,1,NA,NA,NA,NA,"G132","G"
-"265","UCL","2017-2018","R16","1",2018-02-21,"Sevilla FC","Manchester United",0,0,0,0,NA,NA,NA,NA,"G133","G"
-"266","UCL","2017-2018","R16","2",2018-03-13,"Manchester United","Sevilla FC",1,2,0,0,NA,NA,NA,NA,"G133","G"
-"267","UCL","2018-2019","R16","1",2019-02-13,"Tottenham Hotspur","Borussia Dortmund",3,0,0,0,NA,NA,NA,NA,"G134","G"
-"268","UCL","2018-2019","R16","2",2019-03-05,"Borussia Dortmund","Tottenham Hotspur",0,1,0,0,NA,NA,NA,NA,"G134","G"
-"269","UCL","2018-2019","R16","1",2019-02-13,"AFC Ajax","Real Madrid",1,2,0,0,NA,NA,NA,NA,"G135","G"
-"270","UCL","2018-2019","R16","2",2019-03-05,"Real Madrid","AFC Ajax",1,4,0,2,NA,NA,NA,NA,"G135","G"
-"271","UCL","2018-2019","R16","1",2019-02-19,"Olympique Lyon","FC Barcelona",0,0,0,0,NA,NA,NA,NA,"G136","G"
-"272","UCL","2018-2019","R16","2",2019-03-13,"FC Barcelona","Olympique Lyon",5,1,2,0,NA,NA,NA,NA,"G136","G"
-"273","UCL","2018-2019","R16","1",2019-02-19,"Liverpool FC","Bayern München",0,0,0,0,NA,NA,NA,NA,"G137","G"
-"274","UCL","2018-2019","R16","2",2019-03-13,"Bayern München","Liverpool FC",1,3,1,1,NA,NA,NA,NA,"G137","G"
-"275","UCL","2018-2019","R16","1",2019-02-20,"FC Schalke 04","Manchester City",2,3,2,1,NA,NA,NA,NA,"G138","G"
-"276","UCL","2018-2019","R16","2",2019-03-12,"Manchester City","FC Schalke 04",7,0,3,0,NA,NA,NA,NA,"G138","G"
-"277","UCL","2018-2019","R16","1",2019-02-20,"Atlético Madrid","Juventus",2,0,0,0,NA,NA,NA,NA,"G139","G"
-"278","UCL","2018-2019","R16","2",2019-03-12,"Juventus","Atlético Madrid",3,0,1,0,NA,NA,NA,NA,"G139","G"
-"279","UCL","2007-2008","R8","1",2008-04-01,"AS Roma","Manchester United",0,2,0,1,NA,NA,NA,NA,"G140","G"
-"280","UCL","2007-2008","R8","2",2008-04-09,"Manchester United","AS Roma",1,0,0,0,NA,NA,NA,NA,"G140","G"
-"281","UCL","2007-2008","R8","1",2008-04-01,"FC Schalke 04","FC Barcelona",0,1,0,1,NA,NA,NA,NA,"G141","G"
-"282","UCL","2007-2008","R8","2",2008-04-09,"FC Barcelona","FC Schalke 04",1,0,1,0,NA,NA,NA,NA,"G141","G"
-"283","UCL","2007-2008","R8","1",2008-04-02,"Arsenal FC","Liverpool FC",1,1,1,1,NA,NA,NA,NA,"G142","G"
-"284","UCL","2007-2008","R8","2",2008-04-08,"Liverpool FC","Arsenal FC",4,2,1,1,NA,NA,NA,NA,"G142","G"
-"285","UCL","2007-2008","R8","1",2008-04-02,"Fenerbahçe","Chelsea FC",2,1,0,1,NA,NA,NA,NA,"G143","G"
-"286","UCL","2007-2008","R8","2",2008-04-08,"Chelsea FC","Fenerbahçe",2,0,1,0,NA,NA,NA,NA,"G143","G"
-"287","UCL","2008-2009","R8","1",2009-04-07,"Villarreal CF","Arsenal FC",1,1,1,0,NA,NA,NA,NA,"G144","G"
-"288","UCL","2008-2009","R8","2",2009-04-15,"Arsenal FC","Villarreal CF",3,0,1,0,NA,NA,NA,NA,"G144","G"
-"289","UCL","2008-2009","R8","1",2009-04-07,"Manchester United","FC Porto",2,2,1,1,NA,NA,NA,NA,"G145","G"
-"290","UCL","2008-2009","R8","2",2009-04-15,"FC Porto","Manchester United",0,1,0,1,NA,NA,NA,NA,"G145","G"
-"291","UCL","2008-2009","R8","1",2009-04-08,"Liverpool FC","Chelsea FC",1,3,1,1,NA,NA,NA,NA,"G146","G"
-"292","UCL","2008-2009","R8","2",2009-04-14,"Chelsea FC","Liverpool FC",4,4,0,2,NA,NA,NA,NA,"G146","G"
-"293","UCL","2008-2009","R8","1",2009-04-08,"FC Barcelona","Bayern München",4,0,4,0,NA,NA,NA,NA,"G147","G"
-"294","UCL","2008-2009","R8","2",2009-04-14,"Bayern München","FC Barcelona",1,1,0,0,NA,NA,NA,NA,"G147","G"
-"295","UCL","2009-2010","R8","1",2010-03-30,"Olympique Lyon","Girondins Bordeaux",3,1,2,1,NA,NA,NA,NA,"G148","G"
-"296","UCL","2009-2010","R8","2",2010-04-07,"Girondins Bordeaux","Olympique Lyon",1,0,1,0,NA,NA,NA,NA,"G148","G"
-"297","UCL","2009-2010","R8","1",2010-03-31,"Arsenal FC","FC Barcelona",2,2,0,0,NA,NA,NA,NA,"G149","G"
-"298","UCL","2009-2010","R8","2",2010-04-06,"FC Barcelona","Arsenal FC",4,1,3,1,NA,NA,NA,NA,"G149","G"
-"299","UCL","2009-2010","R8","1",2010-03-31,"Inter","CSKA Moskva",1,0,0,0,NA,NA,NA,NA,"G150","G"
-"300","UCL","2009-2010","R8","2",2010-04-06,"CSKA Moskva","Inter",0,1,0,1,NA,NA,NA,NA,"G150","G"
-"301","UCL","2010-2011","R8","1",2011-04-05,"Real Madrid","Tottenham Hotspur",4,0,1,0,NA,NA,NA,NA,"G151","G"
-"302","UCL","2010-2011","R8","2",2011-04-13,"Tottenham Hotspur","Real Madrid",0,1,0,0,NA,NA,NA,NA,"G151","G"
-"303","UCL","2010-2011","R8","1",2011-04-05,"Inter","FC Schalke 04",2,5,2,2,NA,NA,NA,NA,"G152","G"
-"304","UCL","2010-2011","R8","2",2011-04-13,"FC Schalke 04","Inter",2,1,1,0,NA,NA,NA,NA,"G152","G"
-"305","UCL","2010-2011","R8","1",2011-04-06,"Chelsea FC","Manchester United",0,1,0,1,NA,NA,NA,NA,"G153","G"
-"306","UCL","2010-2011","R8","2",2011-04-12,"Manchester United","Chelsea FC",2,1,1,0,NA,NA,NA,NA,"G153","G"
-"307","UCL","2010-2011","R8","1",2011-04-06,"FC Barcelona","Shakhtar Donetsk",5,1,2,0,NA,NA,NA,NA,"G154","G"
-"308","UCL","2010-2011","R8","2",2011-04-12,"Shakhtar Donetsk","FC Barcelona",0,1,0,1,NA,NA,NA,NA,"G154","G"
-"309","UCL","2011-2012","R8","1",2012-03-27,"APOEL Nikosia","Real Madrid",0,3,0,0,NA,NA,NA,NA,"G155","G"
-"310","UCL","2011-2012","R8","2",2012-04-04,"Real Madrid","APOEL Nikosia",5,2,2,0,NA,NA,NA,NA,"G155","G"
-"311","UCL","2011-2012","R8","1",2012-03-27,"SL Benfica","Chelsea FC",0,1,0,0,NA,NA,NA,NA,"G156","G"
-"312","UCL","2011-2012","R8","2",2012-04-04,"Chelsea FC","SL Benfica",2,1,1,0,NA,NA,NA,NA,"G156","G"
-"313","UCL","2011-2012","R8","1",2012-03-28,"Olympique Marseille","Bayern München",0,2,0,1,NA,NA,NA,NA,"G157","G"
-"314","UCL","2011-2012","R8","2",2012-04-03,"Bayern München","Olympique Marseille",2,0,2,0,NA,NA,NA,NA,"G157","G"
-"315","UCL","2011-2012","R8","1",2012-03-28,"AC Milan","FC Barcelona",0,0,0,0,NA,NA,NA,NA,"G158","G"
-"316","UCL","2011-2012","R8","2",2012-04-03,"FC Barcelona","AC Milan",3,1,2,1,NA,NA,NA,NA,"G158","G"
-"317","UCL","2012-2013","R8","1",2013-04-02,"Bayern München","Juventus",2,0,1,0,NA,NA,NA,NA,"G159","G"
-"318","UCL","2012-2013","R8","2",2013-04-10,"Juventus","Bayern München",0,2,0,0,NA,NA,NA,NA,"G159","G"
-"319","UCL","2012-2013","R8","1",2013-04-03,"Málaga CF","Borussia Dortmund",0,0,0,0,NA,NA,NA,NA,"G160","G"
-"320","UCL","2012-2013","R8","2",2013-04-09,"Borussia Dortmund","Málaga CF",3,2,1,1,NA,NA,NA,NA,"G160","G"
-"321","UCL","2012-2013","R8","1",2013-04-03,"Real Madrid","Galatasaray",3,0,2,0,NA,NA,NA,NA,"G161","G"
-"322","UCL","2012-2013","R8","2",2013-04-09,"Galatasaray","Real Madrid",3,2,0,1,NA,NA,NA,NA,"G161","G"
-"323","UCL","2013-2014","R8","1",2014-04-01,"FC Barcelona","Atlético Madrid",1,1,0,0,NA,NA,NA,NA,"G162","G"
-"324","UCL","2013-2014","R8","2",2014-04-09,"Atlético Madrid","FC Barcelona",1,0,1,0,NA,NA,NA,NA,"G162","G"
-"325","UCL","2013-2014","R8","1",2014-04-01,"Manchester United","Bayern München",1,1,0,0,NA,NA,NA,NA,"G163","G"
-"326","UCL","2013-2014","R8","2",2014-04-09,"Bayern München","Manchester United",3,1,0,0,NA,NA,NA,NA,"G163","G"
-"327","UCL","2013-2014","R8","1",2014-04-02,"Real Madrid","Borussia Dortmund",3,0,2,0,NA,NA,NA,NA,"G164","G"
-"328","UCL","2013-2014","R8","2",2014-04-08,"Borussia Dortmund","Real Madrid",2,0,2,0,NA,NA,NA,NA,"G164","G"
-"329","UCL","2014-2015","R8","1",2015-04-14,"Atlético Madrid","Real Madrid",0,0,0,0,NA,NA,NA,NA,"G165","G"
-"330","UCL","2014-2015","R8","2",2015-04-22,"Real Madrid","Atlético Madrid",1,0,0,0,NA,NA,NA,NA,"G165","G"
-"331","UCL","2014-2015","R8","1",2015-04-14,"Juventus","AS Monaco",1,0,0,0,NA,NA,NA,NA,"G166","G"
-"332","UCL","2014-2015","R8","2",2015-04-22,"AS Monaco","Juventus",0,0,0,0,NA,NA,NA,NA,"G166","G"
-"333","UCL","2014-2015","R8","1",2015-04-15,"Paris Saint-Germain","FC Barcelona",1,3,0,1,NA,NA,NA,NA,"G167","G"
-"334","UCL","2014-2015","R8","2",2015-04-21,"FC Barcelona","Paris Saint-Germain",2,0,2,0,NA,NA,NA,NA,"G167","G"
-"335","UCL","2014-2015","R8","1",2015-04-15,"FC Porto","Bayern München",3,1,2,1,NA,NA,NA,NA,"G168","G"
-"336","UCL","2014-2015","R8","2",2015-04-21,"Bayern München","FC Porto",6,1,5,0,NA,NA,NA,NA,"G168","G"
-"337","UCL","2015-2016","R8","1",2016-04-05,"Bayern München","SL Benfica",1,0,1,0,NA,NA,NA,NA,"G169","G"
-"338","UCL","2015-2016","R8","2",2016-04-13,"SL Benfica","Bayern München",2,2,1,1,NA,NA,NA,NA,"G169","G"
-"339","UCL","2015-2016","R8","1",2016-04-05,"FC Barcelona","Atlético Madrid",2,1,0,1,NA,NA,NA,NA,"G170","G"
-"340","UCL","2015-2016","R8","2",2016-04-13,"Atlético Madrid","FC Barcelona",2,0,1,0,NA,NA,NA,NA,"G170","G"
-"341","UCL","2015-2016","R8","1",2016-04-06,"VfL Wolfsburg","Real Madrid",2,0,2,0,NA,NA,NA,NA,"G171","G"
-"342","UCL","2015-2016","R8","2",2016-04-12,"Real Madrid","VfL Wolfsburg",3,0,2,0,NA,NA,NA,NA,"G171","G"
-"343","UCL","2015-2016","R8","1",2016-04-06,"Paris Saint-Germain","Manchester City",2,2,1,1,NA,NA,NA,NA,"G172","G"
-"344","UCL","2015-2016","R8","2",2016-04-12,"Manchester City","Paris Saint-Germain",1,0,0,0,NA,NA,NA,NA,"G172","G"
-"345","UCL","2016-2017","R8","1",2017-04-11,"Juventus","FC Barcelona",3,0,2,0,NA,NA,NA,NA,"G173","G"
-"346","UCL","2016-2017","R8","2",2017-04-19,"FC Barcelona","Juventus",0,0,0,0,NA,NA,NA,NA,"G173","G"
-"347","UCL","2016-2017","R8","1",2017-04-12,"Borussia Dortmund","AS Monaco",2,3,0,2,NA,NA,NA,NA,"G174","G"
-"348","UCL","2016-2017","R8","2",2017-04-19,"AS Monaco","Borussia Dortmund",3,1,2,0,NA,NA,NA,NA,"G174","G"
-"349","UCL","2016-2017","R8","1",2017-04-12,"Atlético Madrid","Leicester City",1,0,1,0,NA,NA,NA,NA,"G175","G"
-"350","UCL","2016-2017","R8","2",2017-04-18,"Leicester City","Atlético Madrid",1,1,0,1,NA,NA,NA,NA,"G175","G"
-"351","UCL","2017-2018","R8","1",2018-04-03,"Sevilla FC","Bayern München",1,2,1,1,NA,NA,NA,NA,"G176","G"
-"352","UCL","2017-2018","R8","2",2018-04-11,"Bayern München","Sevilla FC",0,0,0,0,NA,NA,NA,NA,"G176","G"
-"353","UCL","2017-2018","R8","1",2018-04-03,"Juventus","Real Madrid",0,3,0,1,NA,NA,NA,NA,"G177","G"
-"354","UCL","2017-2018","R8","2",2018-04-11,"Real Madrid","Juventus",1,3,0,2,NA,NA,NA,NA,"G177","G"
-"355","UCL","2017-2018","R8","1",2018-04-04,"Liverpool FC","Manchester City",3,0,3,0,NA,NA,NA,NA,"G178","G"
-"356","UCL","2017-2018","R8","2",2018-04-10,"Manchester City","Liverpool FC",1,2,1,0,NA,NA,NA,NA,"G178","G"
-"357","UCL","2018-2019","R8","1",2019-04-09,"Liverpool FC","FC Porto",2,0,2,0,NA,NA,NA,NA,"G179","G"
-"358","UCL","2018-2019","R8","2",2019-04-17,"FC Porto","Liverpool FC",1,4,0,1,NA,NA,NA,NA,"G179","G"
-"359","UCL","2018-2019","R8","1",2019-04-10,"AFC Ajax","Juventus",1,1,0,1,NA,NA,NA,NA,"G180","G"
-"360","UCL","2018-2019","R8","2",2019-04-16,"Juventus","AFC Ajax",1,2,1,1,NA,NA,NA,NA,"G180","G"
-"361","UCL","2018-2019","R8","1",2019-04-10,"Manchester United","FC Barcelona",0,1,0,1,NA,NA,NA,NA,"G181","G"
-"362","UCL","2018-2019","R8","2",2019-04-16,"FC Barcelona","Manchester United",3,0,2,0,NA,NA,NA,NA,"G181","G"
-"363","UCL","2007-2008","R4","1",2008-04-23,"FC Barcelona","Manchester United",0,0,0,0,NA,NA,NA,NA,"G182","G"
-"364","UCL","2007-2008","R4","2",2008-04-29,"Manchester United","FC Barcelona",1,0,1,0,NA,NA,NA,NA,"G182","G"
-"365","UCL","2008-2009","R4","1",2009-04-29,"Manchester United","Arsenal FC",1,0,1,0,NA,NA,NA,NA,"G183","G"
-"366","UCL","2008-2009","R4","2",2009-05-05,"Arsenal FC","Manchester United",1,3,0,2,NA,NA,NA,NA,"G183","G"
-"367","UCL","2009-2010","R4","1",2010-04-20,"Inter","FC Barcelona",3,1,1,1,NA,NA,NA,NA,"G184","G"
-"368","UCL","2009-2010","R4","2",2010-04-28,"FC Barcelona","Inter",1,0,0,0,NA,NA,NA,NA,"G184","G"
-"369","UCL","2009-2010","R4","1",2010-04-21,"Bayern München","Olympique Lyon",1,0,0,0,NA,NA,NA,NA,"G185","G"
-"370","UCL","2009-2010","R4","2",2010-04-27,"Olympique Lyon","Bayern München",0,3,0,1,NA,NA,NA,NA,"G185","G"
-"371","UCL","2010-2011","R4","1",2011-04-26,"FC Schalke 04","Manchester United",0,2,0,0,NA,NA,NA,NA,"G186","G"
-"372","UCL","2010-2011","R4","2",2011-05-04,"Manchester United","FC Schalke 04",4,1,2,1,NA,NA,NA,NA,"G186","G"
-"373","UCL","2010-2011","R4","1",2011-04-27,"Real Madrid","FC Barcelona",0,2,0,0,NA,NA,NA,NA,"G187","G"
-"374","UCL","2010-2011","R4","2",2011-05-03,"FC Barcelona","Real Madrid",1,1,0,0,NA,NA,NA,NA,"G187","G"
-"375","UCL","2011-2012","R4","1",2012-04-18,"Chelsea FC","FC Barcelona",1,0,1,0,NA,NA,NA,NA,"G188","G"
-"376","UCL","2011-2012","R4","2",2012-04-24,"FC Barcelona","Chelsea FC",2,2,2,1,NA,NA,NA,NA,"G188","G"
-"377","UCL","2012-2013","R4","1",2013-04-23,"Bayern München","FC Barcelona",4,0,1,0,NA,NA,NA,NA,"G189","G"
-"378","UCL","2012-2013","R4","2",2013-05-01,"FC Barcelona","Bayern München",0,3,0,0,NA,NA,NA,NA,"G189","G"
-"379","UCL","2012-2013","R4","1",2013-04-24,"Borussia Dortmund","Real Madrid",4,1,1,1,NA,NA,NA,NA,"G190","G"
-"380","UCL","2012-2013","R4","2",2013-04-30,"Real Madrid","Borussia Dortmund",2,0,0,0,NA,NA,NA,NA,"G190","G"
-"381","UCL","2013-2014","R4","1",2014-04-22,"Atlético Madrid","Chelsea FC",0,0,0,0,NA,NA,NA,NA,"G191","G"
-"382","UCL","2013-2014","R4","2",2014-04-30,"Chelsea FC","Atlético Madrid",1,3,1,1,NA,NA,NA,NA,"G191","G"
-"383","UCL","2013-2014","R4","1",2014-04-23,"Real Madrid","Bayern München",1,0,1,0,NA,NA,NA,NA,"G192","G"
-"384","UCL","2013-2014","R4","2",2014-04-29,"Bayern München","Real Madrid",0,4,0,3,NA,NA,NA,NA,"G192","G"
-"385","UCL","2014-2015","R4","1",2015-05-05,"Juventus","Real Madrid",2,1,1,1,NA,NA,NA,NA,"G193","G"
-"386","UCL","2014-2015","R4","2",2015-05-13,"Real Madrid","Juventus",1,1,1,0,NA,NA,NA,NA,"G193","G"
-"387","UCL","2014-2015","R4","1",2015-05-06,"FC Barcelona","Bayern München",3,0,0,0,NA,NA,NA,NA,"G194","G"
-"388","UCL","2014-2015","R4","2",2015-05-12,"Bayern München","FC Barcelona",3,2,1,2,NA,NA,NA,NA,"G194","G"
-"389","UCL","2015-2016","R4","1",2016-04-26,"Manchester City","Real Madrid",0,0,0,0,NA,NA,NA,NA,"G195","G"
-"390","UCL","2015-2016","R4","2",2016-05-04,"Real Madrid","Manchester City",1,0,1,0,NA,NA,NA,NA,"G195","G"
-"391","UCL","2016-2017","R4","1",2017-05-02,"Real Madrid","Atlético Madrid",3,0,1,0,NA,NA,NA,NA,"G196","G"
-"392","UCL","2016-2017","R4","2",2017-05-10,"Atlético Madrid","Real Madrid",2,1,2,1,NA,NA,NA,NA,"G196","G"
-"393","UCL","2016-2017","R4","1",2017-05-03,"AS Monaco","Juventus",0,2,0,1,NA,NA,NA,NA,"G197","G"
-"394","UCL","2016-2017","R4","2",2017-05-09,"Juventus","AS Monaco",2,1,2,0,NA,NA,NA,NA,"G197","G"
-"395","UCL","2017-2018","R4","1",2018-04-24,"Liverpool FC","AS Roma",5,2,2,0,NA,NA,NA,NA,"G198","G"
-"396","UCL","2017-2018","R4","2",2018-05-02,"AS Roma","Liverpool FC",4,2,1,2,NA,NA,NA,NA,"G198","G"
-"397","UCL","2017-2018","R4","1",2018-04-25,"Bayern München","Real Madrid",1,2,1,1,NA,NA,NA,NA,"G199","G"
-"398","UCL","2017-2018","R4","2",2018-05-01,"Real Madrid","Bayern München",2,2,1,1,NA,NA,NA,NA,"G199","G"
-"399","UCL","2018-2019","R4","1",2019-05-01,"FC Barcelona","Liverpool FC",3,0,1,0,NA,NA,NA,NA,"G200","G"
-"400","UCL","2018-2019","R4","2",2019-05-07,"Liverpool FC","FC Barcelona",4,0,1,0,NA,NA,NA,NA,"G200","G"
+"","COMP","SEASON","ROUND","TEAM1","TEAM2","WINNER","L1D","L2D","TYPE","LEG_ID","T1G","T2G","G1_ID","G2_ID"
+"1","UCL","1996-1997","R8","AFC Ajax","Atlético Madrid","AFC Ajax",1997-03-05,1997-03-19,"ET","ET1",4,3,1,2
+"2","UCL","1997-1998","R8","Bayern München","Borussia Dortmund","Borussia Dortmund",1998-03-04,1998-03-18,"ET","ET2",0,1,3,4
+"3","UCL","1999-2000","R8","Chelsea FC","FC Barcelona","FC Barcelona",2000-04-05,2000-04-18,"ET","ET3",4,6,5,6
+"4","UCL","2002-2003","R8","Juventus","FC Barcelona","Juventus",2003-04-09,2003-04-22,"ET","ET4",3,2,7,8
+"5","UCL","2004-2005","R8","Olympique Lyon","PSV Eindhoven","PSV Eindhoven",2005-04-05,2005-04-13,"ET","ET5",4,6,9,10
+"6","UCL","2004-2005","R8","AC Milan","Inter","AC Milan",2005-04-06,2005-04-12,"ET","ET6",5,0,11,12
+"7","UCL","2006-2007","R4","Chelsea FC","Liverpool FC","Liverpool FC",2007-04-25,2007-05-01,"ET","ET7",2,5,13,14
+"8","UCL","2007-2008","R16","FC Schalke 04","FC Porto","FC Schalke 04",2008-02-19,2008-03-05,"ET","ET8",5,2,15,16
+"9","UCL","2007-2008","R16","Fenerbahçe","Sevilla FC","Fenerbahçe",2008-02-20,2008-03-04,"ET","ET9",8,7,17,18
+"10","UCL","2008-2009","R16","Arsenal FC","AS Roma","Arsenal FC",2009-02-24,2009-03-11,"ET","ET10",8,7,19,20
+"11","UCL","2011-2012","R16","Olympique Lyon","APOEL Nikosia","APOEL Nikosia",2012-02-14,2012-03-07,"ET","ET11",4,5,21,22
+"12","UCL","2011-2012","R16","SSC Napoli","Chelsea FC","Chelsea FC",2012-02-21,2012-03-14,"ET","ET12",4,5,23,24
+"13","UCL","2014-2015","R16","Paris Saint-Germain","Chelsea FC","Chelsea FC",2015-02-17,2015-03-11,"ET","ET13",3,3,25,26
+"14","UCL","2014-2015","R16","Bayer Leverkusen","Atlético Madrid","Atlético Madrid",2015-02-25,2015-03-17,"ET","ET14",3,4,27,28
+"15","UCL","2015-2016","R16","Juventus","Bayern München","Bayern München",2016-02-23,2016-03-16,"ET","ET15",4,6,29,30
+"16","UCL","2015-2016","R16","PSV Eindhoven","Atlético Madrid","Atlético Madrid",2016-02-24,2016-03-15,"ET","ET16",7,8,31,32
+"17","UCL","2018-2019","R16","AS Roma","FC Porto","FC Porto",2019-02-12,2019-03-06,"ET","ET17",3,4,33,34
+"18","UCL","2016-2017","R8","Bayern München","Real Madrid","Real Madrid",2017-04-12,2017-04-18,"ET","ET18",3,6,35,36
+"19","UCL","2007-2008","R4","Liverpool FC","Chelsea FC","Chelsea FC",2008-04-22,2008-04-30,"ET","ET19",3,4,37,38
+"20","UCL","2011-2012","R4","Bayern München","Real Madrid","Bayern München",2012-04-17,2012-04-25,"ET","ET20",6,4,39,40
+"21","UCL","1994-1995","R8","Bayern München","IFK Göteborg","Bayern München",1995-03-01,1995-03-15,"AGR","AGR1",2,2,41,42
+"22","UCL","1997-1998","R8","AS Monaco","Manchester United","AS Monaco",1998-03-04,1998-03-18,"AGR","AGR2",1,1,43,44
+"23","UCL","2000-2001","R8","Arsenal FC","Valencia CF","Valencia CF",2001-04-04,2001-04-17,"AGR","AGR3",2,2,45,46
+"24","UCL","2002-2003","R8","Inter","Valencia CF","Inter",2003-04-09,2003-04-22,"AGR","AGR4",2,2,47,48
+"25","UCL","2001-2002","R4","Manchester United","Bayer Leverkusen","Bayer Leverkusen",2002-04-24,2002-04-30,"AGR","AGR5",3,3,49,50
+"26","UCL","2002-2003","R4","AC Milan","Inter","AC Milan",2003-05-07,2003-05-13,"AGR","AGR6",1,1,51,52
+"27","UCL","2003-2004","R8","Real Madrid","AS Monaco","AS Monaco",2004-03-24,2004-04-06,"AGR","AGR7",5,5,53,54
+"28","UCL","2005-2006","R8","Inter","Villarreal CF","Villarreal CF",2006-03-29,2006-04-04,"AGR","AGR8",2,2,55,56
+"29","UCL","2004-2005","R4","AC Milan","PSV Eindhoven","AC Milan",2005-04-26,2005-05-04,"AGR","AGR9",3,3,57,58
+"30","UCL","2008-2009","R16","Atlético Madrid","FC Porto","FC Porto",2009-02-24,2009-03-11,"AGR","AGR10",2,2,59,60
+"31","UCL","2009-2010","R16","Bayern München","ACF Fiorentina","Bayern München",2010-02-17,2010-03-09,"AGR","AGR11",4,4,61,62
+"32","UCL","2010-2011","R16","Inter","Bayern München","Inter",2011-02-23,2011-03-15,"AGR","AGR12",3,3,63,64
+"33","UCL","2011-2012","R16","Olympique Marseille","Inter","Olympique Marseille",2012-02-22,2012-03-13,"AGR","AGR13",2,2,65,66
+"34","UCL","2012-2013","R16","Arsenal FC","Bayern München","Bayern München",2013-02-19,2013-03-13,"AGR","AGR14",3,3,67,68
+"35","UCL","2014-2015","R16","Arsenal FC","AS Monaco","AS Monaco",2015-02-25,2015-03-17,"AGR","AGR15",3,3,69,70
+"36","UCL","2016-2017","R16","Manchester City","AS Monaco","AS Monaco",2017-02-21,2017-03-15,"AGR","AGR16",6,6,71,72
+"37","UCL","2017-2018","R16","Shakhtar Donetsk","AS Roma","AS Roma",2018-02-21,2018-03-13,"AGR","AGR17",2,2,73,74
+"38","UCL","2018-2019","R16","Manchester United","Paris Saint-Germain","Manchester United",2019-02-12,2019-03-06,"AGR","AGR18",3,3,75,76
+"39","UCL","2009-2010","R8","Bayern München","Manchester United","Bayern München",2010-03-30,2010-04-07,"AGR","AGR19",4,4,77,78
+"40","UCL","2012-2013","R8","Paris Saint-Germain","FC Barcelona","FC Barcelona",2013-04-02,2013-04-10,"AGR","AGR20",3,3,79,80
+"41","UCL","2013-2014","R8","Paris Saint-Germain","Chelsea FC","Chelsea FC",2014-04-02,2014-04-08,"AGR","AGR21",3,3,81,82
+"42","UCL","2017-2018","R8","FC Barcelona","AS Roma","AS Roma",2018-04-04,2018-04-10,"AGR","AGR22",4,4,83,84
+"43","UCL","2018-2019","R8","Tottenham Hotspur","Manchester City","Tottenham Hotspur",2019-04-09,2019-04-17,"AGR","AGR23",4,4,85,86
+"44","UCL","2008-2009","R4","FC Barcelona","Chelsea FC","FC Barcelona",2009-04-28,2009-05-06,"AGR","AGR24",1,1,87,88
+"45","UCL","2015-2016","R4","Atlético Madrid","Bayern München","Atlético Madrid",2016-04-27,2016-05-03,"AGR","AGR25",2,2,89,90
+"46","UCL","2018-2019","R4","Tottenham Hotspur","AFC Ajax","Tottenham Hotspur",2019-04-30,2019-05-08,"AGR","AGR26",3,3,91,92
+"47","UCL","1994-1995","R8","FC Barcelona","Paris Saint-Germain","Paris Saint-Germain",1995-03-01,1995-03-15,"G","G1",2,3,101,102
+"48","UCL","1994-1995","R8","Hajduk Split","AFC Ajax","AFC Ajax",1995-03-01,1995-03-15,"G","G2",0,3,103,104
+"49","UCL","1994-1995","R8","AC Milan","SL Benfica","AC Milan",1995-03-01,1995-03-15,"G","G3",2,0,105,106
+"50","UCL","1995-1996","R8","Borussia Dortmund","AFC Ajax","AFC Ajax",1996-03-05,1996-03-20,"G","G4",0,3,107,108
+"51","UCL","1995-1996","R8","Legia Warszawa","Panathinaikos","Panathinaikos",1996-03-05,1996-03-20,"G","G5",0,3,109,110
+"52","UCL","1995-1996","R8","FC Nantes","Spartak Moskva","FC Nantes",1996-03-05,1996-03-20,"G","G6",4,2,111,112
+"53","UCL","1995-1996","R8","Real Madrid","Juventus","Juventus",1996-03-05,1996-03-20,"G","G7",1,2,113,114
+"54","UCL","1996-1997","R8","Manchester United","FC Porto","Manchester United",1997-03-05,1997-03-19,"G","G8",4,0,115,116
+"55","UCL","1996-1997","R8","Rosenborg BK","Juventus","Juventus",1997-03-05,1997-03-19,"G","G9",1,3,117,118
+"56","UCL","1996-1997","R8","Borussia Dortmund","AJ Auxerre","Borussia Dortmund",1997-03-05,1997-03-19,"G","G10",4,1,119,120
+"57","UCL","1997-1998","R8","Bayer Leverkusen","Real Madrid","Real Madrid",1998-03-04,1998-03-18,"G","G11",1,4,121,122
+"58","UCL","1997-1998","R8","Juventus","Dinamo Kiev","Juventus",1998-03-04,1998-03-18,"G","G12",5,2,123,124
+"59","UCL","1998-1999","R8","Bayern München","1. FC Kaiserslautern","Bayern München",1999-03-03,1999-03-17,"G","G13",6,0,125,126
+"60","UCL","1998-1999","R8","Juventus","Olympiakos Piräus","Juventus",1999-03-03,1999-03-17,"G","G14",3,2,127,128
+"61","UCL","1998-1999","R8","Manchester United","Inter","Manchester United",1999-03-03,1999-03-17,"G","G15",3,1,129,130
+"62","UCL","1998-1999","R8","Real Madrid","Dinamo Kiev","Dinamo Kiev",1999-03-03,1999-03-17,"G","G16",1,3,131,132
+"63","UCL","1999-2000","R8","FC Porto","Bayern München","Bayern München",2000-04-04,2000-04-19,"G","G17",2,3,133,134
+"64","UCL","1999-2000","R8","Real Madrid","Manchester United","Real Madrid",2000-04-04,2000-04-19,"G","G18",3,2,135,136
+"65","UCL","1999-2000","R8","Valencia CF","Lazio Roma","Valencia CF",2000-04-05,2000-04-18,"G","G19",5,3,137,138
+"66","UCL","2000-2001","R8","Manchester United","Bayern München","Bayern München",2001-04-03,2001-04-18,"G","G20",1,3,139,140
+"67","UCL","2000-2001","R8","Galatasaray","Real Madrid","Real Madrid",2001-04-03,2001-04-18,"G","G21",3,5,141,142
+"68","UCL","2000-2001","R8","Leeds United","Deportivo La Coruña","Leeds United",2001-04-04,2001-04-17,"G","G22",3,2,143,144
+"69","UCL","2001-2002","R8","Bayern München","Real Madrid","Real Madrid",2002-04-02,2002-04-10,"G","G23",2,3,145,146
+"70","UCL","2001-2002","R8","Deportivo La Coruña","Manchester United","Manchester United",2002-04-02,2002-04-10,"G","G24",2,5,147,148
+"71","UCL","2001-2002","R8","Panathinaikos","FC Barcelona","FC Barcelona",2002-04-03,2002-04-09,"G","G25",2,3,149,150
+"72","UCL","2001-2002","R8","Liverpool FC","Bayer Leverkusen","Bayer Leverkusen",2002-04-03,2002-04-09,"G","G26",3,4,151,152
+"73","UCL","2002-2003","R8","Real Madrid","Manchester United","Real Madrid",2003-04-08,2003-04-23,"G","G27",6,5,153,154
+"74","UCL","2002-2003","R8","AFC Ajax","AC Milan","AC Milan",2003-04-08,2003-04-23,"G","G28",2,3,155,156
+"75","UCL","1994-1995","R4","Bayern München","AFC Ajax","AFC Ajax",1995-04-05,1995-04-19,"G","G29",2,5,157,158
+"76","UCL","1994-1995","R4","Paris Saint-Germain","AC Milan","AC Milan",1995-04-05,1995-04-19,"G","G30",0,3,159,160
+"77","UCL","1995-1996","R4","AFC Ajax","Panathinaikos","AFC Ajax",1996-04-03,1996-04-17,"G","G31",3,1,161,162
+"78","UCL","1995-1996","R4","Juventus","FC Nantes","Juventus",1996-04-03,1996-04-17,"G","G32",4,3,163,164
+"79","UCL","1996-1997","R4","AFC Ajax","Juventus","Juventus",1997-04-09,1997-04-23,"G","G33",2,6,165,166
+"80","UCL","1996-1997","R4","Borussia Dortmund","Manchester United","Borussia Dortmund",1997-04-09,1997-04-23,"G","G34",2,0,167,168
+"81","UCL","1997-1998","R4","Juventus","AS Monaco","Juventus",1998-04-01,1998-04-15,"G","G35",6,4,169,170
+"82","UCL","1997-1998","R4","Real Madrid","Borussia Dortmund","Real Madrid",1998-04-01,1998-04-15,"G","G36",2,0,171,172
+"83","UCL","1998-1999","R4","Dinamo Kiev","Bayern München","Bayern München",1999-04-07,1999-04-21,"G","G37",3,4,173,174
+"84","UCL","1998-1999","R4","Manchester United","Juventus","Manchester United",1999-04-07,1999-04-21,"G","G38",4,3,175,176
+"85","UCL","1999-2000","R4","Valencia CF","FC Barcelona","Valencia CF",2000-05-02,2000-05-10,"G","G39",5,3,177,178
+"86","UCL","1999-2000","R4","Real Madrid","Bayern München","Real Madrid",2000-05-02,2000-05-10,"G","G40",3,2,179,180
+"87","UCL","2000-2001","R4","Real Madrid","Bayern München","Bayern München",2001-05-01,2001-05-09,"G","G41",1,3,181,182
+"88","UCL","2000-2001","R4","Leeds United","Valencia CF","Valencia CF",2001-05-02,2001-05-08,"G","G42",0,3,183,184
+"89","UCL","2001-2002","R4","FC Barcelona","Real Madrid","Real Madrid",2002-04-23,2002-05-01,"G","G43",1,3,185,186
+"90","UCL","2002-2003","R4","Real Madrid","Juventus","Juventus",2003-05-06,2003-05-14,"G","G44",3,4,187,188
+"91","UCL","2003-2004","R8","FC Porto","Olympique Lyon","FC Porto",2004-03-23,2004-04-07,"G","G45",4,2,189,190
+"92","UCL","2003-2004","R8","AC Milan","Deportivo La Coruña","Deportivo La Coruña",2004-03-23,2004-04-07,"G","G46",4,5,191,192
+"93","UCL","2003-2004","R8","Chelsea FC","Arsenal FC","Chelsea FC",2004-03-24,2004-04-06,"G","G47",3,2,193,194
+"94","UCL","2004-2005","R8","Liverpool FC","Juventus","Liverpool FC",2005-04-05,2005-04-13,"G","G48",2,1,195,196
+"95","UCL","2004-2005","R8","Chelsea FC","Bayern München","Chelsea FC",2005-04-06,2005-04-12,"G","G49",6,5,197,198
+"96","UCL","2005-2006","R8","Arsenal FC","Juventus","Arsenal FC",2006-03-28,2006-04-05,"G","G50",2,0,199,200
+"97","UCL","2005-2006","R8","SL Benfica","FC Barcelona","FC Barcelona",2006-03-28,2006-04-05,"G","G51",0,2,201,202
+"98","UCL","2005-2006","R8","Olympique Lyon","AC Milan","AC Milan",2006-03-29,2006-04-04,"G","G52",1,3,203,204
+"99","UCL","2006-2007","R8","AC Milan","Bayern München","AC Milan",2007-04-03,2007-04-11,"G","G53",4,2,205,206
+"100","UCL","2006-2007","R8","PSV Eindhoven","Liverpool FC","Liverpool FC",2007-04-03,2007-04-11,"G","G54",0,4,207,208
+"101","UCL","2006-2007","R8","AS Roma","Manchester United","Manchester United",2007-04-04,2007-04-10,"G","G55",3,8,209,210
+"102","UCL","2006-2007","R8","Chelsea FC","Valencia CF","Chelsea FC",2007-04-04,2007-04-10,"G","G56",3,2,211,212
+"103","UCL","2003-2004","R4","AS Monaco","Chelsea FC","AS Monaco",2004-04-20,2004-05-05,"G","G57",5,3,213,214
+"104","UCL","2003-2004","R4","FC Porto","Deportivo La Coruña","FC Porto",2004-04-21,2004-05-04,"G","G58",1,0,215,216
+"105","UCL","2004-2005","R4","Chelsea FC","Liverpool FC","Liverpool FC",2005-04-27,2005-05-03,"G","G59",0,1,217,218
+"106","UCL","2005-2006","R4","AC Milan","FC Barcelona","FC Barcelona",2006-04-18,2006-04-26,"G","G60",0,1,219,220
+"107","UCL","2005-2006","R4","Arsenal FC","Villarreal CF","Arsenal FC",2006-04-19,2006-04-25,"G","G61",1,0,221,222
+"108","UCL","2006-2007","R4","Manchester United","AC Milan","AC Milan",2007-04-24,2007-05-02,"G","G62",3,5,223,224
+"109","UCL","2007-2008","R16","Liverpool FC","Inter","Liverpool FC",2008-02-19,2008-03-11,"G","G63",3,0,225,226
+"110","UCL","2007-2008","R16","AS Roma","Real Madrid","AS Roma",2008-02-19,2008-03-05,"G","G64",4,2,227,228
+"111","UCL","2007-2008","R16","Olympiakos Piräus","Chelsea FC","Chelsea FC",2008-02-19,2008-03-05,"G","G65",0,3,229,230
+"112","UCL","2007-2008","R16","Celtic FC","FC Barcelona","FC Barcelona",2008-02-20,2008-03-04,"G","G66",2,4,231,232
+"113","UCL","2007-2008","R16","Olympique Lyon","Manchester United","Manchester United",2008-02-20,2008-03-04,"G","G67",1,2,233,234
+"114","UCL","2007-2008","R16","Arsenal FC","AC Milan","Arsenal FC",2008-02-20,2008-03-04,"G","G68",2,0,235,236
+"115","UCL","2008-2009","R16","Olympique Lyon","FC Barcelona","FC Barcelona",2009-02-24,2009-03-11,"G","G69",3,6,237,238
+"116","UCL","2008-2009","R16","Inter","Manchester United","Manchester United",2009-02-24,2009-03-11,"G","G70",0,2,239,240
+"117","UCL","2008-2009","R16","Chelsea FC","Juventus","Chelsea FC",2009-02-25,2009-03-10,"G","G71",3,2,241,242
+"118","UCL","2008-2009","R16","Villarreal CF","Panathinaikos","Villarreal CF",2009-02-25,2009-03-10,"G","G72",3,2,243,244
+"119","UCL","2008-2009","R16","Sporting CP","Bayern München","Bayern München",2009-02-25,2009-03-10,"G","G73",1,12,245,246
+"120","UCL","2008-2009","R16","Real Madrid","Liverpool FC","Liverpool FC",2009-02-25,2009-03-10,"G","G74",0,5,247,248
+"121","UCL","2009-2010","R16","Olympique Lyon","Real Madrid","Olympique Lyon",2010-02-16,2010-03-10,"G","G75",2,1,249,250
+"122","UCL","2009-2010","R16","AC Milan","Manchester United","Manchester United",2010-02-16,2010-03-10,"G","G76",2,7,251,252
+"123","UCL","2009-2010","R16","FC Porto","Arsenal FC","Arsenal FC",2010-02-17,2010-03-09,"G","G77",2,6,253,254
+"124","UCL","2009-2010","R16","VfB Stuttgart","FC Barcelona","FC Barcelona",2010-02-23,2010-03-17,"G","G78",1,5,255,256
+"125","UCL","2009-2010","R16","Olympiakos Piräus","Girondins Bordeaux","Girondins Bordeaux",2010-02-23,2010-03-17,"G","G79",1,3,257,258
+"126","UCL","2009-2010","R16","CSKA Moskva","Sevilla FC","CSKA Moskva",2010-02-24,2010-03-16,"G","G80",3,2,259,260
+"127","UCL","2009-2010","R16","Inter","Chelsea FC","Inter",2010-02-24,2010-03-16,"G","G81",3,1,261,262
+"128","UCL","2010-2011","R16","AC Milan","Tottenham Hotspur","Tottenham Hotspur",2011-02-15,2011-03-09,"G","G82",0,1,263,264
+"129","UCL","2010-2011","R16","Valencia CF","FC Schalke 04","FC Schalke 04",2011-02-15,2011-03-09,"G","G83",2,4,265,266
+"130","UCL","2010-2011","R16","AS Roma","Shakhtar Donetsk","Shakhtar Donetsk",2011-02-16,2011-03-08,"G","G84",2,6,267,268
+"131","UCL","2010-2011","R16","Arsenal FC","FC Barcelona","FC Barcelona",2011-02-16,2011-03-08,"G","G85",3,4,269,270
+"132","UCL","2010-2011","R16","Olympique Lyon","Real Madrid","Real Madrid",2011-02-22,2011-03-16,"G","G86",1,4,271,272
+"133","UCL","2010-2011","R16","FC København","Chelsea FC","Chelsea FC",2011-02-22,2011-03-16,"G","G87",0,2,273,274
+"134","UCL","2010-2011","R16","Olympique Marseille","Manchester United","Manchester United",2011-02-23,2011-03-15,"G","G88",1,2,275,276
+"135","UCL","2011-2012","R16","Bayer Leverkusen","FC Barcelona","FC Barcelona",2012-02-14,2012-03-07,"G","G89",2,10,277,278
+"136","UCL","2011-2012","R16","Zenit St. Petersburg","SL Benfica","SL Benfica",2012-02-15,2012-03-06,"G","G90",3,4,279,280
+"137","UCL","2011-2012","R16","AC Milan","Arsenal FC","AC Milan",2012-02-15,2012-03-06,"G","G91",4,3,281,282
+"138","UCL","2011-2012","R16","CSKA Moskva","Real Madrid","Real Madrid",2012-02-21,2012-03-14,"G","G92",2,5,283,284
+"139","UCL","2011-2012","R16","FC Basel","Bayern München","Bayern München",2012-02-22,2012-03-13,"G","G93",1,7,285,286
+"140","UCL","2012-2013","R16","Celtic FC","Juventus","Juventus",2013-02-12,2013-03-06,"G","G94",0,5,287,288
+"141","UCL","2012-2013","R16","Valencia CF","Paris Saint-Germain","Paris Saint-Germain",2013-02-12,2013-03-06,"G","G95",2,3,289,290
+"142","UCL","2012-2013","R16","Shakhtar Donetsk","Borussia Dortmund","Borussia Dortmund",2013-02-13,2013-03-05,"G","G96",2,5,291,292
+"143","UCL","2012-2013","R16","Real Madrid","Manchester United","Real Madrid",2013-02-13,2013-03-05,"G","G97",3,2,293,294
+"144","UCL","2012-2013","R16","FC Porto","Málaga CF","Málaga CF",2013-02-19,2013-03-13,"G","G98",1,2,295,296
+"145","UCL","2012-2013","R16","Galatasaray","FC Schalke 04","Galatasaray",2013-02-20,2013-03-12,"G","G99",4,3,297,298
+"146","UCL","2012-2013","R16","AC Milan","FC Barcelona","FC Barcelona",2013-02-20,2013-03-12,"G","G100",2,4,299,300
+"147","UCL","2013-2014","R16","Manchester City","FC Barcelona","FC Barcelona",2014-02-18,2014-03-12,"G","G101",1,4,301,302
+"148","UCL","2013-2014","R16","Bayer Leverkusen","Paris Saint-Germain","Paris Saint-Germain",2014-02-18,2014-03-12,"G","G102",1,6,303,304
+"149","UCL","2013-2014","R16","AC Milan","Atlético Madrid","Atlético Madrid",2014-02-19,2014-03-11,"G","G103",1,5,305,306
+"150","UCL","2013-2014","R16","Arsenal FC","Bayern München","Bayern München",2014-02-19,2014-03-11,"G","G104",1,3,307,308
+"151","UCL","2013-2014","R16","Zenit St. Petersburg","Borussia Dortmund","Borussia Dortmund",2014-02-25,2014-03-19,"G","G105",4,5,309,310
+"152","UCL","2013-2014","R16","Olympiakos Piräus","Manchester United","Manchester United",2014-02-25,2014-03-19,"G","G106",2,3,311,312
+"153","UCL","2013-2014","R16","Galatasaray","Chelsea FC","Chelsea FC",2014-02-26,2014-03-18,"G","G107",1,3,313,314
+"154","UCL","2013-2014","R16","FC Schalke 04","Real Madrid","Real Madrid",2014-02-26,2014-03-18,"G","G108",2,9,315,316
+"155","UCL","2014-2015","R16","Shakhtar Donetsk","Bayern München","Bayern München",2015-02-17,2015-03-11,"G","G109",0,7,317,318
+"156","UCL","2014-2015","R16","FC Schalke 04","Real Madrid","Real Madrid",2015-02-18,2015-03-10,"G","G110",4,5,319,320
+"157","UCL","2014-2015","R16","FC Basel","FC Porto","FC Porto",2015-02-18,2015-03-10,"G","G111",1,5,321,322
+"158","UCL","2014-2015","R16","Manchester City","FC Barcelona","FC Barcelona",2015-02-24,2015-03-18,"G","G112",1,3,323,324
+"159","UCL","2014-2015","R16","Juventus","Borussia Dortmund","Juventus",2015-02-24,2015-03-18,"G","G113",5,1,325,326
+"160","UCL","2015-2016","R16","Paris Saint-Germain","Chelsea FC","Paris Saint-Germain",2016-02-16,2016-03-09,"G","G114",4,2,327,328
+"161","UCL","2015-2016","R16","SL Benfica","Zenit St. Petersburg","SL Benfica",2016-02-16,2016-03-09,"G","G115",3,1,329,330
+"162","UCL","2015-2016","R16","KAA Gent","VfL Wolfsburg","VfL Wolfsburg",2016-02-17,2016-03-08,"G","G116",2,4,331,332
+"163","UCL","2015-2016","R16","AS Roma","Real Madrid","Real Madrid",2016-02-17,2016-03-08,"G","G117",0,4,333,334
+"164","UCL","2015-2016","R16","Arsenal FC","FC Barcelona","FC Barcelona",2016-02-23,2016-03-16,"G","G118",1,5,335,336
+"165","UCL","2015-2016","R16","Dinamo Kiev","Manchester City","Manchester City",2016-02-24,2016-03-15,"G","G119",1,3,337,338
+"166","UCL","2016-2017","R16","SL Benfica","Borussia Dortmund","Borussia Dortmund",2017-02-14,2017-03-08,"G","G120",1,4,339,340
+"167","UCL","2016-2017","R16","Paris Saint-Germain","FC Barcelona","FC Barcelona",2017-02-14,2017-03-08,"G","G121",5,6,341,342
+"168","UCL","2016-2017","R16","Real Madrid","SSC Napoli","Real Madrid",2017-02-15,2017-03-07,"G","G122",6,2,343,344
+"169","UCL","2016-2017","R16","Bayern München","Arsenal FC","Bayern München",2017-02-15,2017-03-07,"G","G123",10,2,345,346
+"170","UCL","2016-2017","R16","Bayer Leverkusen","Atlético Madrid","Atlético Madrid",2017-02-21,2017-03-15,"G","G124",2,4,347,348
+"171","UCL","2016-2017","R16","FC Porto","Juventus","Juventus",2017-02-22,2017-03-14,"G","G125",0,3,349,350
+"172","UCL","2016-2017","R16","Sevilla FC","Leicester City","Leicester City",2017-02-22,2017-03-14,"G","G126",2,3,351,352
+"173","UCL","2017-2018","R16","Juventus","Tottenham Hotspur","Juventus",2018-02-13,2018-03-07,"G","G127",4,3,353,354
+"174","UCL","2017-2018","R16","FC Basel","Manchester City","Manchester City",2018-02-13,2018-03-07,"G","G128",2,5,355,356
+"175","UCL","2017-2018","R16","FC Porto","Liverpool FC","Liverpool FC",2018-02-14,2018-03-06,"G","G129",0,5,357,358
+"176","UCL","2017-2018","R16","Real Madrid","Paris Saint-Germain","Real Madrid",2018-02-14,2018-03-06,"G","G130",5,2,359,360
+"177","UCL","2017-2018","R16","Chelsea FC","FC Barcelona","FC Barcelona",2018-02-20,2018-03-14,"G","G131",1,4,361,362
+"178","UCL","2017-2018","R16","Bayern München","Beşiktaş","Bayern München",2018-02-20,2018-03-14,"G","G132",8,1,363,364
+"179","UCL","2017-2018","R16","Sevilla FC","Manchester United","Sevilla FC",2018-02-21,2018-03-13,"G","G133",2,1,365,366
+"180","UCL","2018-2019","R16","Tottenham Hotspur","Borussia Dortmund","Tottenham Hotspur",2019-02-13,2019-03-05,"G","G134",4,0,367,368
+"181","UCL","2018-2019","R16","AFC Ajax","Real Madrid","AFC Ajax",2019-02-13,2019-03-05,"G","G135",5,3,369,370
+"182","UCL","2018-2019","R16","Olympique Lyon","FC Barcelona","FC Barcelona",2019-02-19,2019-03-13,"G","G136",1,5,371,372
+"183","UCL","2018-2019","R16","Liverpool FC","Bayern München","Liverpool FC",2019-02-19,2019-03-13,"G","G137",3,1,373,374
+"184","UCL","2018-2019","R16","FC Schalke 04","Manchester City","Manchester City",2019-02-20,2019-03-12,"G","G138",2,10,375,376
+"185","UCL","2018-2019","R16","Atlético Madrid","Juventus","Juventus",2019-02-20,2019-03-12,"G","G139",2,3,377,378
+"186","UCL","2007-2008","R8","AS Roma","Manchester United","Manchester United",2008-04-01,2008-04-09,"G","G140",0,3,379,380
+"187","UCL","2007-2008","R8","FC Schalke 04","FC Barcelona","FC Barcelona",2008-04-01,2008-04-09,"G","G141",0,2,381,382
+"188","UCL","2007-2008","R8","Arsenal FC","Liverpool FC","Liverpool FC",2008-04-02,2008-04-08,"G","G142",3,5,383,384
+"189","UCL","2007-2008","R8","Fenerbahçe","Chelsea FC","Chelsea FC",2008-04-02,2008-04-08,"G","G143",2,3,385,386
+"190","UCL","2008-2009","R8","Villarreal CF","Arsenal FC","Arsenal FC",2009-04-07,2009-04-15,"G","G144",1,4,387,388
+"191","UCL","2008-2009","R8","Manchester United","FC Porto","Manchester United",2009-04-07,2009-04-15,"G","G145",3,2,389,390
+"192","UCL","2008-2009","R8","Liverpool FC","Chelsea FC","Chelsea FC",2009-04-08,2009-04-14,"G","G146",5,7,391,392
+"193","UCL","2008-2009","R8","FC Barcelona","Bayern München","FC Barcelona",2009-04-08,2009-04-14,"G","G147",5,1,393,394
+"194","UCL","2009-2010","R8","Olympique Lyon","Girondins Bordeaux","Olympique Lyon",2010-03-30,2010-04-07,"G","G148",3,2,395,396
+"195","UCL","2009-2010","R8","Arsenal FC","FC Barcelona","FC Barcelona",2010-03-31,2010-04-06,"G","G149",3,6,397,398
+"196","UCL","2009-2010","R8","Inter","CSKA Moskva","Inter",2010-03-31,2010-04-06,"G","G150",2,0,399,400
+"197","UCL","2010-2011","R8","Real Madrid","Tottenham Hotspur","Real Madrid",2011-04-05,2011-04-13,"G","G151",5,0,401,402
+"198","UCL","2010-2011","R8","Inter","FC Schalke 04","FC Schalke 04",2011-04-05,2011-04-13,"G","G152",3,7,403,404
+"199","UCL","2010-2011","R8","Chelsea FC","Manchester United","Manchester United",2011-04-06,2011-04-12,"G","G153",1,3,405,406
+"200","UCL","2010-2011","R8","FC Barcelona","Shakhtar Donetsk","FC Barcelona",2011-04-06,2011-04-12,"G","G154",6,1,407,408
+"201","UCL","2011-2012","R8","APOEL Nikosia","Real Madrid","Real Madrid",2012-03-27,2012-04-04,"G","G155",2,8,409,410
+"202","UCL","2011-2012","R8","SL Benfica","Chelsea FC","Chelsea FC",2012-03-27,2012-04-04,"G","G156",1,3,411,412
+"203","UCL","2011-2012","R8","Olympique Marseille","Bayern München","Bayern München",2012-03-28,2012-04-03,"G","G157",0,4,413,414
+"204","UCL","2011-2012","R8","AC Milan","FC Barcelona","FC Barcelona",2012-03-28,2012-04-03,"G","G158",1,3,415,416
+"205","UCL","2012-2013","R8","Bayern München","Juventus","Bayern München",2013-04-02,2013-04-10,"G","G159",4,0,417,418
+"206","UCL","2012-2013","R8","Málaga CF","Borussia Dortmund","Borussia Dortmund",2013-04-03,2013-04-09,"G","G160",2,3,419,420
+"207","UCL","2012-2013","R8","Real Madrid","Galatasaray","Real Madrid",2013-04-03,2013-04-09,"G","G161",5,3,421,422
+"208","UCL","2013-2014","R8","FC Barcelona","Atlético Madrid","Atlético Madrid",2014-04-01,2014-04-09,"G","G162",1,2,423,424
+"209","UCL","2013-2014","R8","Manchester United","Bayern München","Bayern München",2014-04-01,2014-04-09,"G","G163",2,4,425,426
+"210","UCL","2013-2014","R8","Real Madrid","Borussia Dortmund","Real Madrid",2014-04-02,2014-04-08,"G","G164",3,2,427,428
+"211","UCL","2014-2015","R8","Atlético Madrid","Real Madrid","Real Madrid",2015-04-14,2015-04-22,"G","G165",0,1,429,430
+"212","UCL","2014-2015","R8","Juventus","AS Monaco","Juventus",2015-04-14,2015-04-22,"G","G166",1,0,431,432
+"213","UCL","2014-2015","R8","Paris Saint-Germain","FC Barcelona","FC Barcelona",2015-04-15,2015-04-21,"G","G167",1,5,433,434
+"214","UCL","2014-2015","R8","FC Porto","Bayern München","Bayern München",2015-04-15,2015-04-21,"G","G168",4,7,435,436
+"215","UCL","2015-2016","R8","Bayern München","SL Benfica","Bayern München",2016-04-05,2016-04-13,"G","G169",3,2,437,438
+"216","UCL","2015-2016","R8","FC Barcelona","Atlético Madrid","Atlético Madrid",2016-04-05,2016-04-13,"G","G170",2,3,439,440
+"217","UCL","2015-2016","R8","VfL Wolfsburg","Real Madrid","Real Madrid",2016-04-06,2016-04-12,"G","G171",2,3,441,442
+"218","UCL","2015-2016","R8","Paris Saint-Germain","Manchester City","Manchester City",2016-04-06,2016-04-12,"G","G172",2,3,443,444
+"219","UCL","2016-2017","R8","Juventus","FC Barcelona","Juventus",2017-04-11,2017-04-19,"G","G173",3,0,445,446
+"220","UCL","2016-2017","R8","Borussia Dortmund","AS Monaco","AS Monaco",2017-04-12,2017-04-19,"G","G174",3,6,447,448
+"221","UCL","2016-2017","R8","Atlético Madrid","Leicester City","Atlético Madrid",2017-04-12,2017-04-18,"G","G175",2,1,449,450
+"222","UCL","2017-2018","R8","Sevilla FC","Bayern München","Bayern München",2018-04-03,2018-04-11,"G","G176",1,2,451,452
+"223","UCL","2017-2018","R8","Juventus","Real Madrid","Real Madrid",2018-04-03,2018-04-11,"G","G177",3,4,453,454
+"224","UCL","2017-2018","R8","Liverpool FC","Manchester City","Liverpool FC",2018-04-04,2018-04-10,"G","G178",5,1,455,456
+"225","UCL","2018-2019","R8","Liverpool FC","FC Porto","Liverpool FC",2019-04-09,2019-04-17,"G","G179",6,1,457,458
+"226","UCL","2018-2019","R8","AFC Ajax","Juventus","AFC Ajax",2019-04-10,2019-04-16,"G","G180",3,2,459,460
+"227","UCL","2018-2019","R8","Manchester United","FC Barcelona","FC Barcelona",2019-04-10,2019-04-16,"G","G181",0,4,461,462
+"228","UCL","2007-2008","R4","FC Barcelona","Manchester United","Manchester United",2008-04-23,2008-04-29,"G","G182",0,1,463,464
+"229","UCL","2008-2009","R4","Manchester United","Arsenal FC","Manchester United",2009-04-29,2009-05-05,"G","G183",4,1,465,466
+"230","UCL","2009-2010","R4","Inter","FC Barcelona","Inter",2010-04-20,2010-04-28,"G","G184",3,2,467,468
+"231","UCL","2009-2010","R4","Bayern München","Olympique Lyon","Bayern München",2010-04-21,2010-04-27,"G","G185",4,0,469,470
+"232","UCL","2010-2011","R4","FC Schalke 04","Manchester United","Manchester United",2011-04-26,2011-05-04,"G","G186",1,6,471,472
+"233","UCL","2010-2011","R4","Real Madrid","FC Barcelona","FC Barcelona",2011-04-27,2011-05-03,"G","G187",1,3,473,474
+"234","UCL","2011-2012","R4","Chelsea FC","FC Barcelona","Chelsea FC",2012-04-18,2012-04-24,"G","G188",3,2,475,476
+"235","UCL","2012-2013","R4","Bayern München","FC Barcelona","Bayern München",2013-04-23,2013-05-01,"G","G189",7,0,477,478
+"236","UCL","2012-2013","R4","Borussia Dortmund","Real Madrid","Borussia Dortmund",2013-04-24,2013-04-30,"G","G190",4,3,479,480
+"237","UCL","2013-2014","R4","Atlético Madrid","Chelsea FC","Atlético Madrid",2014-04-22,2014-04-30,"G","G191",3,1,481,482
+"238","UCL","2013-2014","R4","Real Madrid","Bayern München","Real Madrid",2014-04-23,2014-04-29,"G","G192",5,0,483,484
+"239","UCL","2014-2015","R4","Juventus","Real Madrid","Juventus",2015-05-05,2015-05-13,"G","G193",3,2,485,486
+"240","UCL","2014-2015","R4","FC Barcelona","Bayern München","FC Barcelona",2015-05-06,2015-05-12,"G","G194",5,3,487,488
+"241","UCL","2015-2016","R4","Manchester City","Real Madrid","Real Madrid",2016-04-26,2016-05-04,"G","G195",0,1,489,490
+"242","UCL","2016-2017","R4","Real Madrid","Atlético Madrid","Real Madrid",2017-05-02,2017-05-10,"G","G196",4,2,491,492
+"243","UCL","2016-2017","R4","AS Monaco","Juventus","Juventus",2017-05-03,2017-05-09,"G","G197",1,4,493,494
+"244","UCL","2017-2018","R4","Liverpool FC","AS Roma","Liverpool FC",2018-04-24,2018-05-02,"G","G198",7,6,495,496
+"245","UCL","2017-2018","R4","Bayern München","Real Madrid","Real Madrid",2018-04-25,2018-05-01,"G","G199",3,4,497,498
+"246","UCL","2018-2019","R4","FC Barcelona","Liverpool FC","Liverpool FC",2019-05-01,2019-05-07,"G","G200",3,4,499,500

@@ -1,83 +1,57 @@
-"","HOMETEAM","AWAYTEAM","HG","AG","MINUTE","WS","LEG_ID"
-"1","Atlético Madrid","AFC Ajax",1,0,29,"Atlético Madrid","ET1"
-"2","Atlético Madrid","AFC Ajax",1,1,49,"AFC Ajax","ET1"
-"3","Atlético Madrid","AFC Ajax",1,2,100,"AFC Ajax","ET1"
-"4","Atlético Madrid","AFC Ajax",2,2,105,"Atlético Madrid","ET1"
-"5","Atlético Madrid","AFC Ajax",2,3,119,"AFC Ajax","ET1"
-"6","Borussia Dortmund","Bayern München",1,0,109,"Borussia Dortmund","ET2"
-"7","FC Barcelona","Chelsea FC",1,0,24,"FC Barcelona","ET3"
-"8","FC Barcelona","Chelsea FC",2,0,45,"FC Barcelona","ET3"
-"9","FC Barcelona","Chelsea FC",2,1,60,"Chelsea FC","ET3"
-"10","FC Barcelona","Chelsea FC",3,1,83,"FC Barcelona","ET3"
-"11","FC Barcelona","Chelsea FC",4,1,99,"FC Barcelona","ET3"
-"12","FC Barcelona","Chelsea FC",5,1,104,"FC Barcelona","ET3"
-"13","FC Barcelona","Juventus",0,1,53,"Juventus","ET4"
-"14","FC Barcelona","Juventus",1,1,66,"FC Barcelona","ET4"
-"15","FC Barcelona","Juventus",1,2,114,"Juventus","ET4"
-"16","PSV Eindhoven","Olympique Lyon",0,1,10,"Olympique Lyon","ET5"
-"17","PSV Eindhoven","Olympique Lyon",1,1,50,"PSV Eindhoven","ET5"
-"18","Inter","AC Milan",0,1,30,"AC Milan","ET6"
-"19","Liverpool FC","Chelsea FC",1,0,22,"Liverpool FC","ET7"
-"20","FC Porto","FC Schalke 04",1,0,86,"FC Porto","ET8"
-"21","AS Roma","Arsenal FC",1,0,9,"AS Roma","ET10"
-"22","APOEL Nikosia","Olympique Lyon",1,0,9,"APOEL Nikosia","ET11"
-"23","Chelsea FC","SSC Napoli",1,0,28,"Chelsea FC","ET12"
-"24","Chelsea FC","SSC Napoli",2,0,47,"Chelsea FC","ET12"
-"25","Chelsea FC","SSC Napoli",2,1,55,"SSC Napoli","ET12"
-"26","Chelsea FC","SSC Napoli",3,1,75,"Chelsea FC","ET12"
-"27","Chelsea FC","SSC Napoli",4,1,105,"Chelsea FC","ET12"
-"28","Chelsea FC","Paris Saint-Germain",1,0,81,"Chelsea FC","ET13"
-"29","Chelsea FC","Paris Saint-Germain",1,1,86,"Paris Saint-Germain","ET13"
-"30","Chelsea FC","Paris Saint-Germain",2,1,96,"Chelsea FC","ET13"
-"31","Chelsea FC","Paris Saint-Germain",2,2,114,"Paris Saint-Germain","ET13"
-"32","Atlético Madrid","Bayer Leverkusen",1,0,27,"Atlético Madrid","ET14"
-"33","Bayern München","Juventus",0,1,5,"Juventus","ET15"
-"34","Bayern München","Juventus",0,2,28,"Juventus","ET15"
-"35","Bayern München","Juventus",1,2,73,"Bayern München","ET15"
-"36","Bayern München","Juventus",2,2,90,"Bayern München","ET15"
-"37","Bayern München","Juventus",3,2,108,"Bayern München","ET15"
-"38","Bayern München","Juventus",4,2,110,"Bayern München","ET15"
-"39","FC Porto","AS Roma",1,0,26,"FC Porto","ET17"
-"40","FC Porto","AS Roma",1,1,37,"AS Roma","ET17"
-"41","FC Porto","AS Roma",2,1,52,"FC Porto","ET17"
-"42","FC Porto","AS Roma",3,1,117,"FC Porto","ET17"
-"43","Real Madrid","Bayern München",0,1,53,"Bayern München","ET18"
-"44","Real Madrid","Bayern München",1,1,76,"Real Madrid","ET18"
-"45","Real Madrid","Bayern München",1,2,78,"Bayern München","ET18"
-"46","Real Madrid","Bayern München",2,2,105,"Real Madrid","ET18"
-"47","Real Madrid","Bayern München",3,2,110,"Real Madrid","ET18"
-"48","Real Madrid","Bayern München",4,2,112,"Real Madrid","ET18"
-"49","Chelsea FC","Liverpool FC",1,0,33,"Chelsea FC","ET19"
-"50","Chelsea FC","Liverpool FC",1,1,64,"Liverpool FC","ET19"
-"51","Chelsea FC","Liverpool FC",2,1,98,"Chelsea FC","ET19"
-"52","Chelsea FC","Liverpool FC",3,1,105,"Chelsea FC","ET19"
-"53","Chelsea FC","Liverpool FC",3,2,117,"Liverpool FC","ET19"
-"54","Real Madrid","Bayern München",1,0,6,"Real Madrid","ET20"
-"55","Real Madrid","Bayern München",2,0,14,"Real Madrid","ET20"
-"56","Real Madrid","Bayern München",2,1,27,"Bayern München","ET20"
-"57","Manchester United","Chelsea FC",1,0,26,"Manchester United","F5"
-"58","Manchester United","Chelsea FC",1,1,45,"Chelsea FC","F5"
-"59","Bayern München","Chelsea FC",1,0,83,"Bayern München","F6"
-"60","Bayern München","Chelsea FC",1,1,88,"Chelsea FC","F6"
-"61","Real Madrid","Atlético Madrid",0,1,36,"Atlético Madrid","F7"
-"62","Real Madrid","Atlético Madrid",1,1,90,"Real Madrid","F7"
-"63","Real Madrid","Atlético Madrid",2,1,110,"Real Madrid","F7"
-"64","Real Madrid","Atlético Madrid",3,1,118,"Real Madrid","F7"
-"65","Real Madrid","Atlético Madrid",4,1,120,"Real Madrid","F7"
-"66","Real Madrid","Atlético Madrid",1,0,15,"Real Madrid","F8"
-"67","Real Madrid","Atlético Madrid",1,1,79,"Atlético Madrid","F8"
-"68","Sevilla FC","Fenerbahçe",1,0,5,"Sevilla FC","ET9"
-"69","Sevilla FC","Fenerbahçe",2,0,10,"Sevilla FC","ET9"
-"70","Sevilla FC","Fenerbahçe",2,1,20,"Fenerbahçe","ET9"
-"71","Sevilla FC","Fenerbahçe",3,1,41,"Sevilla FC","ET9"
-"72","Sevilla FC","Fenerbahçe",3,2,79,"Fenerbahçe","ET9"
-"73","Juventus","AFC Ajax",1,0,12,"Juventus","F1"
-"74","Juventus","AFC Ajax",1,1,41,"AFC Ajax","F1"
-"75","Bayern München","Valencia CF",0,1,3,"Valencia CF","F2"
-"76","Bayern München","Valencia CF",1,1,51,"Bayern München","F2"
-"77","Liverpool FC","AC Milan",0,1,1,"AC Milan","F4"
-"78","Liverpool FC","AC Milan",0,2,39,"AC Milan","F4"
-"79","Liverpool FC","AC Milan",0,3,44,"AC Milan","F4"
-"80","Liverpool FC","AC Milan",1,3,54,"Liverpool FC","F4"
-"81","Liverpool FC","AC Milan",2,3,56,"Liverpool FC","F4"
-"82","Liverpool FC","AC Milan",3,3,60,"Liverpool FC","F4"
+"","HOMETEAM","AWAYTEAM","HG","AG","MINUTE","WS","LEG_ID","GAME_ID"
+"1","APOEL Nikosia","Olympique Lyon",1,0,9,"APOEL Nikosia","ET11",22
+"2","Chelsea FC","SSC Napoli",1,0,28,"Chelsea FC","ET12",24
+"3","Chelsea FC","SSC Napoli",2,0,47,"Chelsea FC","ET12",24
+"4","Chelsea FC","SSC Napoli",2,1,55,"SSC Napoli","ET12",24
+"5","Chelsea FC","SSC Napoli",3,1,75,"Chelsea FC","ET12",24
+"6","Chelsea FC","SSC Napoli",4,1,105,"Chelsea FC","ET12",24
+"7","Chelsea FC","Paris Saint-Germain",1,0,81,"Chelsea FC","ET13",26
+"8","Chelsea FC","Paris Saint-Germain",1,1,86,"Paris Saint-Germain","ET13",26
+"9","Chelsea FC","Paris Saint-Germain",2,1,96,"Chelsea FC","ET13",26
+"10","Chelsea FC","Paris Saint-Germain",2,2,114,"Paris Saint-Germain","ET13",26
+"11","Atlético Madrid","Bayer Leverkusen",1,0,27,"Atlético Madrid","ET14",28
+"12","Bayern München","Juventus",0,1,5,"Juventus","ET15",30
+"13","Bayern München","Juventus",0,2,28,"Juventus","ET15",30
+"14","Bayern München","Juventus",1,2,73,"Bayern München","ET15",30
+"15","Bayern München","Juventus",2,2,90,"Bayern München","ET15",30
+"16","Bayern München","Juventus",3,2,108,"Bayern München","ET15",30
+"17","Bayern München","Juventus",4,2,110,"Bayern München","ET15",30
+"18","FC Porto","AS Roma",1,0,26,"FC Porto","ET17",34
+"19","FC Porto","AS Roma",1,1,37,"AS Roma","ET17",34
+"20","FC Porto","AS Roma",2,1,52,"FC Porto","ET17",34
+"21","FC Porto","AS Roma",3,1,117,"FC Porto","ET17",34
+"22","Real Madrid","Bayern München",0,1,53,"Bayern München","ET18",36
+"23","Real Madrid","Bayern München",1,1,76,"Real Madrid","ET18",36
+"24","Real Madrid","Bayern München",1,2,78,"Bayern München","ET18",36
+"25","Real Madrid","Bayern München",2,2,105,"Real Madrid","ET18",36
+"26","Real Madrid","Bayern München",3,2,110,"Real Madrid","ET18",36
+"27","Real Madrid","Bayern München",4,2,112,"Real Madrid","ET18",36
+"28","Chelsea FC","Liverpool FC",1,0,33,"Chelsea FC","ET19",38
+"29","Chelsea FC","Liverpool FC",1,1,64,"Liverpool FC","ET19",38
+"30","Chelsea FC","Liverpool FC",2,1,98,"Chelsea FC","ET19",38
+"31","Chelsea FC","Liverpool FC",3,1,105,"Chelsea FC","ET19",38
+"32","Chelsea FC","Liverpool FC",3,2,117,"Liverpool FC","ET19",38
+"33","Real Madrid","Bayern München",1,0,6,"Real Madrid","ET20",40
+"34","Real Madrid","Bayern München",2,0,14,"Real Madrid","ET20",40
+"35","Real Madrid","Bayern München",2,1,27,"Bayern München","ET20",40
+"36","Juventus","AFC Ajax",1,0,12,"Juventus","F1",93
+"37","Juventus","AFC Ajax",1,1,41,"AFC Ajax","F1",93
+"38","Bayern München","Valencia CF",0,1,3,"Valencia CF","F2",94
+"39","Bayern München","Valencia CF",1,1,51,"Bayern München","F2",94
+"40","Liverpool FC","AC Milan",0,1,1,"AC Milan","F4",96
+"41","Liverpool FC","AC Milan",0,2,39,"AC Milan","F4",96
+"42","Liverpool FC","AC Milan",0,3,44,"AC Milan","F4",96
+"43","Liverpool FC","AC Milan",1,3,54,"Liverpool FC","F4",96
+"44","Liverpool FC","AC Milan",2,3,56,"Liverpool FC","F4",96
+"45","Liverpool FC","AC Milan",3,3,60,"Liverpool FC","F4",96
+"46","Manchester United","Chelsea FC",1,0,26,"Manchester United","F5",97
+"47","Manchester United","Chelsea FC",1,1,45,"Chelsea FC","F5",97
+"48","Bayern München","Chelsea FC",1,0,83,"Bayern München","F6",98
+"49","Bayern München","Chelsea FC",1,1,88,"Chelsea FC","F6",98
+"50","Real Madrid","Atlético Madrid",0,1,36,"Atlético Madrid","F7",99
+"51","Real Madrid","Atlético Madrid",1,1,90,"Real Madrid","F7",99
+"52","Real Madrid","Atlético Madrid",2,1,110,"Real Madrid","F7",99
+"53","Real Madrid","Atlético Madrid",3,1,118,"Real Madrid","F7",99
+"54","Real Madrid","Atlético Madrid",4,1,120,"Real Madrid","F7",99
+"55","Real Madrid","Atlético Madrid",1,0,15,"Real Madrid","F8",100
+"56","Real Madrid","Atlético Madrid",1,1,79,"Atlético Madrid","F8",100

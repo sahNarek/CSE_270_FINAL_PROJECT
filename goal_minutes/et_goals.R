@@ -132,7 +132,7 @@ scrap_game <- function(url){
   return(result)
 }
 
-ft_goals <- function(url, hteam, ateam, leg_id){
+ft_goals <- function(url, hteam, ateam, leg_id, game_id){
   table <- scrap_game(url)
   if(is.data.frame(table)){
     table$HOMETEAM <- hteam
@@ -147,12 +147,10 @@ ft_goals <- function(url, hteam, ateam, leg_id){
     table <- table %>%
       select(HOMETEAM, AWAYTEAM, HG, AG, MINUTE, WS)
     table$LEG_ID <- leg_id
+    table$GAME_ID <- game_id
     return(table)
   }
 }
-
-game <- et_f[1,]
-
 
 
 get_et_minutes <- function(data) {
@@ -162,7 +160,7 @@ get_et_minutes <- function(data) {
     game_url <- get_game_url(hteam = game$HOMETEAM, ateam = game$AWAYTEAM, 
                              season = game$SEASON, round = game$ROUND, url = url)
     game_data <- ft_goals(url = game_url, hteam = game$HOMETEAM, 
-                          ateam = game$AWAYTEAM,leg_id = game$LEG_ID)
+                          ateam = game$AWAYTEAM,leg_id = game$LEG_ID, game_id = game$GAME_ID)
     result <- rbind(result, game_data)
   }
   return(result)
@@ -196,7 +194,8 @@ get_missing_data <- function(data = problems){
     game <- data[i,]
     game_url <- game$url
     game_data <- ft_goals(url = game_url, hteam = game$HOMETEAM, 
-                          ateam = game$AWAYTEAM,leg_id = game$LEG_ID)
+                          ateam = game$AWAYTEAM,leg_id = game$LEG_ID,
+                          game_id = game$GAME_ID)
     result <- rbind(result, game_data)
   }
   return(result)
@@ -206,6 +205,8 @@ missing <- get_missing_data()
 
 et_minutes <- rbind(et_minutes, missing)
 
+et_minutes <- et_minutes %>%
+  filter(!(is.na(WS)))
 
 save(et_minutes, file =  "../data/et_minutes.rda")
 write.csv(et_minutes, file =  "../data/et_minutes.csv")

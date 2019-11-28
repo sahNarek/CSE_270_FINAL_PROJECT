@@ -67,7 +67,7 @@ get_et_score <- function(text){
   et_goals$AG <- et_goals$AG - ft_goals$AG
   
   a <- data.frame(FTHG = ft_goals$HG, FTAG = ft_goals$AG , HTHG = ht_goals$HG, HTAG = ht_goals$AG,
-                  ETHG = et_goals$HG, ETAG = et_goals$HG, PTHG = NA, PTAG = NA)
+                  ETHG = et_goals$HG, ETAG = et_goals$AG, PTHG = NA, PTAG = NA)
   return(a)
 }
 
@@ -218,7 +218,7 @@ finals_leg_ids <- function(final_games, st_id, type = "F"){
   return(result)
 }
 
-legs_info <- function(data) {
+legs_winners <- function(data) {
   result <- c()
   et_away <- data %>%
     filter(LEG != "F")
@@ -250,14 +250,17 @@ legs_info <- function(data) {
       t2_g = t2_g + game2$PTHG
       winner <- ifelse(t1_g > t2_g, team1, team2)
     }
-    
+    else if(type == "G"){
+      winner <- ifelse(t1_g > t2_g, team1, team2)
+    }
     leg1_date <- game1$DATE
     leg2_date <- game2$DATE
     
     leg_result <- data.frame(COMP = game1$COMP, SEASON = game1$SEASON, ROUND = game1$ROUND,
                              TEAM1 = team1, TEAM2 = team2, WINNER = winner,
-                             L1D = leg1_date, L2D = leg2_date, TYPE = type,
-                             LEG_ID = leg_id, T1G = t1_g, T2G = t2_g)
+                             L1D = leg1_date, L2D = leg2_date, TYPE = type,LEG_ID = leg_id, 
+                             T1G = t1_g, T2G = t2_g, G1_ID = game1$GAME_ID,
+                             G2_ID = game2$GAME_ID)
     result <- rbind(result, leg_result)
   }
   return(result)
@@ -316,12 +319,24 @@ et_agr <- rbind(et_legs, agr_legs, final_legs)
 et_agr$TYPE <- factor(et_agr$TYPE, levels = unique(et_agr$TYPE), labels = c("ET","AGR","F"))
 et_agr[is.na(et_agr)] <- 0
 
-legs_info <- legs_info(data = et_agr)
+et_ids <- seq(from = 1, to = nrow(et_agr), by = 1)
+et_agr$GAME_ID <- et_ids 
+
+games_ids <- seq(from = 101, to = 100 + nrow(games), by = 1)
+games$GAME_ID <- games_ids
+
+games[is.na(games)] <- 0
+
+legs_info1 <- legs_winners(data = et_agr)
+legs_info2 <- legs_winners(data = games)
+
+legs_info <- rbind(legs_info1, legs_info2)
 
 save(et_agr, file = "data/et_agr_94_18.rda")
 write.csv(et_agr, file = "data/et_agr_94_18.csv")
 save(games, file = "data/no_et_games.rda")
 write.csv(games, file = "data/no_et_games.csv")
 save(legs_info, file = "data/legs_info.rda")
-write.csv(games, file = "data/legs_info.csv")
+write.csv(legs_info, file = "data/legs_info.csv")
+
 
