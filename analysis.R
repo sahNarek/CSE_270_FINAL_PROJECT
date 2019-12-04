@@ -240,11 +240,14 @@ calculate_relative_elos <- function(data){
 } 
 
 
-aa <- calculate_relative_elos(data = games_no_rares)
-aa$elos_df <- aa$elos_df %>%
+custom_elos <- calculate_relative_elos(data = games_no_rares)
+
+custom_elos$elos_df <- custom_elos$elos_df %>%
   filter(TEAM %in% wpct_table_1$TEAM) %>%
   arrange(desc(ELO))
-aa$elos_df
+custom_elos$elos_df
+
+
 
 gold_minutes <- et_minutes %>% 
   filter(MINUTE > 90) %>%
@@ -265,6 +268,50 @@ gold_goal <- function(data) {
   return(winners)
 }
 
+get_elos_by_date <- function(source, game_date, game_team) {
+  elos <- source %>% 
+    filter(team == game_team , date <= game_date ) %>%
+    arrange(desc(date))
+  return(elos[1,]$rating)
+}
+
+neutral_games <- function(data) {
+  agr_legs <- data %>%
+    filter(TYPE == "AGR")
+  elo_teams <- unique(po_elos$team)
+  result <- c()
+
+  for(i in 1:nrow(agr_legs)){
+    leg <- agr_legs[i,]
+    team1 <- as.character(leg$TEAM1)
+    team2 <- as.character(leg$TEAM2)
+    l2date <- leg$L2D
+    if(team1 %in% elo_teams && team2 %in% elo_teams){
+      elo1 <- get_elos_by_date(source = po_elos, game_date = l2date, game_team = team1)
+      elo2 <- get_elos_by_date(source = po_elos, game_date = l2date, game_team = team2)
+      wins.1 = elo.prob(elo.A = elo1,
+                        elo.B = elo2)
+      wins.2 = 1 - wins.1
+      game <- data.frame(TEAM1 = team1, TEAM2 = team2, WINS.1 = wins.1, WINS.2 = wins.2,
+                         LEG_ID = leg$LEG_ID, ACTUAL_WINNER = leg$WINNER)
+      result <- rbind(result, game)
+    }
+  }
+  result$TEAM1 <- as.character(result$TEAM1)
+  result$TEAM2 <- as.character(result$TEAM2)
+  result <- result %>%
+    mutate(NG_WINNER = ifelse(WINS.1 > WINS.2, TEAM1, TEAM2))
+  return(result)
+}
+
+
+
+simulated_games <- neutral_games(data = legs_info)
+
+
+
 golden_goal_winners <- gold_goal(data = et_minutes)
 actual_winners <- legs_info %>%
   filter(LEG_ID %in% golden_goal_winners$LEG_ID)
+
+
