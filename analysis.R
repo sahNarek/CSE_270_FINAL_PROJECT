@@ -4,8 +4,8 @@ load("data/legs_info.rda")
 load("data/et_minutes.rda")
 load("data/po_elos.rda")
 
-packages_list <- c("ggplot2","dplyr", "scales",
-                   "plotly", "stringr", "elo")
+packages_list <- c("ggplot2","dplyr", "scales", "DescTools",
+                   "plotly", "stringr", "elo", "caret", "e1071")
 
 
 install_or_call <- function(list = packages_list){
@@ -136,7 +136,6 @@ box_1 <- plot_ly(table, x = ~M, type = "box") %>%
   layout(title = "NUMBER OF PO MATCHES BY TEAMS",
          yaxis = list(showgrid = F, zeroline = F, showticklabels = F),
          xaxis = list(showgrid = T, zeroline = F, showticklabels = T))
-
 box_1
 
 wpct_table <- cl_po_k(table)
@@ -180,6 +179,22 @@ p1 <- ggplotly(p1)%>%
          yaxis = list(showgrid = F, zeroline = F, showticklabels = F),
          xaxis = list(showgrid = T, zeroline = F, showticklabels = T))
 p1
+
+
+hist <- ggplot(data=et_minutes, aes(x = MINUTE)) + 
+  geom_histogram(breaks=seq(0, 120, by=10), 
+                 col="red", 
+                 fill="green", 
+                 alpha = .2) + 
+  labs(title="Histogram for Goal Minutes", x="Minutes", y="Number of Goals") + 
+  xlim(c(0,120))
+
+hist_ly <- ggplotly(hist)
+hist_ly
+
+
+
+
 
 
 lucky_teams_1 <- wpct_table_1 %>%
@@ -239,6 +254,8 @@ calculate_relative_elos <- function(data){
   return(list(relative = relative_df, elos_df = final_elos))
 } 
 
+games_no_rares <- all_games %>%
+  filter(HOMETEAM %in% unique(po_elos$team),AWAYTEAM %in% unique(po_elos$team))
 
 custom_elos <- calculate_relative_elos(data = games_no_rares)
 
@@ -246,7 +263,6 @@ custom_elos$elos_df <- custom_elos$elos_df %>%
   filter(TEAM %in% wpct_table_1$TEAM) %>%
   arrange(desc(ELO))
 custom_elos$elos_df
-
 
 
 gold_minutes <- et_minutes %>% 
@@ -300,13 +316,33 @@ neutral_games <- function(data) {
   result$TEAM1 <- as.character(result$TEAM1)
   result$TEAM2 <- as.character(result$TEAM2)
   result <- result %>%
-    mutate(NG_WINNER = ifelse(WINS.1 > WINS.2, TEAM1, TEAM2))
+    mutate(ACTUAL.1 = ifelse(ACTUAL_WINNER == TEAM1, 1, 0),
+           ACTUAL.2 = ifelse(ACTUAL_WINNER == TEAM2, 1, 0),
+           NG_WINNER = ifelse(WINS.1 > WINS.2, TEAM1, TEAM2))
   return(result)
 }
 
+rand_0_1 <- function() {
+  return(round(runif(n = 1, min = 0, max = 1)))
+}
 
 
 simulated_games <- neutral_games(data = legs_info)
+simulated_games <- simulated_games %>%
+  mutate(PREDICTED.1 = ifelse(WINS.1 > 0.5,1,
+                              ifelse(WINS.1 < 0.5, 0, rand_0_1())),
+         PREDICTED.2 = ifelse(WINS.2 > 0.5,1,
+                              ifelse(WINS.2 < 0.5, 0, rand_0_1())))
+
+
+
+
+agr_brier_1 <- BrierScore(pred = simulated_games$WINS.1, resp = simulated_games$ACTUAL.1)
+agr_brier_1
+
+agr_conf_1 <- confusionMatrix(data = factor(simulated_games$ACTUAL.1),
+                              reference = factor(simulated_games$PREDICTED.1))
+agr_conf_1
 
 
 
@@ -315,3 +351,9 @@ actual_winners <- legs_info %>%
   filter(LEG_ID %in% golden_goal_winners$LEG_ID)
 
 
+et_vs <- games_no_rares %>%
+  group_by(SEASON) %>%
+  summarise(HTG = sum(HTHG) + sum(HTAG),
+            STG = (sum(FTHG) + sum(FTAG)) - HTG,
+            ETG = sum(ETHG) + sum(ETAG)) %>%
+  arrange(desc(HTG + STG + ETG))
